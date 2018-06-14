@@ -1,0 +1,36 @@
+uuid: 711ba565-97f9-4bb6-9e56-c3d2f308d7fa
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.page
+    - paragraphs.paragraphs_type.from_library
+    - paragraphs.paragraphs_type.text
+  module:
+    - entity_reference_revisions
+id: node.page.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: page
+label: Afsnit
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      from_library: from_library
+      text: text
+    target_bundles_drag_drop:
+      from_library:
+        enabled: true
+        weight: 2
+      text:
+        enabled: true
+        weight: 3
+field_type: entity_reference_revisions

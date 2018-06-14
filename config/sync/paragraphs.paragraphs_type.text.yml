@@ -1,0 +1,14 @@
+uuid: 4efdef8a-618a-4c43-97b5-8a86c05193a3
+langcode: da
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: text
+label: Tekst
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

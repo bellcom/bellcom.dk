@@ -1,0 +1,21 @@
+uuid: 0baf6d80-a079-4279-b16a-3815293cb82e
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subheading
+    - node.type.page
+  module:
+    - text
+id: node.page.field_subheading
+field_name: field_subheading
+entity_type: node
+bundle: page
+label: Underrubrik
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

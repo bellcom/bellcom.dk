@@ -88,7 +88,16 @@
  * );
  * @endcode
  */
-$databases = array();
+ $databases['default']['default'] = array (
+   'database' => 'bellcom_drupal8',
+   'username' => 'drupal',
+   'password' => 'drupal',
+   'host' => 'localhost',
+   'port' => '3306',
+   'driver' => 'mysql',
+   'prefix' => '',
+   'collation' => 'utf8mb4_general_ci',
+ );
 
 /**
  * Customizing database settings.
@@ -297,7 +306,7 @@ $config_directories = array();
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'aQHv6fnvjiwak5ygy9CWaLdDSwgfxW2LEeIXqBu-dxFW8Sz_eJUYUrwrLq52Wo5jamTp_SrLZw';
 
 /**
  * Deployment identifier.
@@ -786,3 +795,14 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
 $config_directories['sync'] = '../config/sync';
+$databases['default']['default'] = array (
+  'database' => 'bellcom_drupal8',
+  'username' => 'drupal',
+  'password' => 'drupal',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);
+$settings['install_profile'] = 'standard';

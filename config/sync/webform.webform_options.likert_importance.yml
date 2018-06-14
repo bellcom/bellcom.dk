@@ -1,0 +1,14 @@
+uuid: 39f8d8d1-d69d-4079-b00d-213a7b7f1335
+langcode: da
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform
+_core:
+  default_config_hash: Hbc8n5HtVZVs5fSBSpSbuY07CVvqkKP76csvRHN9pK8
+id: likert_importance
+label: 'Likert: Importance'
+category: Likert
+likert: true
+options: "1: Not at all Important\n2: Somewhat Important\n3: Neutral\n4: Important\n5: Very Important\n"

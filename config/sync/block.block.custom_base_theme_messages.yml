@@ -1,0 +1,22 @@
+uuid: 4a68bbea-5787-4bce-a2d3-e58ff199a8eb
+langcode: da
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - custom_base_theme
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: custom_base_theme_messages
+theme: custom_base_theme
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Statusmeddelelser
+  provider: system
+  label_display: '0'
+visibility: {  }

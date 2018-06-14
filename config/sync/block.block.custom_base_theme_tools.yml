@@ -1,0 +1,26 @@
+uuid: 97425cee-6ce0-4e25-aebc-e044ea9bc64e
+langcode: da
+status: true
+dependencies:
+  config:
+    - system.menu.tools
+  module:
+    - system
+  theme:
+    - custom_base_theme
+_core:
+  default_config_hash: NeHSoqm4XFqA7_0bDmR429ZZQt3LRbZMNRJTMsFyOfI
+id: custom_base_theme_tools
+theme: custom_base_theme
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:tools'
+settings:
+  id: 'system_menu_block:tools'
+  label: Værktøjer
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

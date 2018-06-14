@@ -1,0 +1,14 @@
+uuid: 31157dca-c042-4592-9df5-dc701c301de6
+name: Bellcom
+mail: support@bellcom.dk
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: da
+default_langcode: da
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

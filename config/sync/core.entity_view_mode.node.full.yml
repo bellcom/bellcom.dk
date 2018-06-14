@@ -1,0 +1,12 @@
+uuid: 3e5710ce-f49f-47c9-8a71-9b13a80a63a7
+langcode: da
+status: false
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: ElrtInxGjZd7GaapJ5O9n-ugi2hG2IxFivtgn0tHOsk
+id: node.full
+label: 'Fuldt indhold'
+targetEntityType: node
+cache: true

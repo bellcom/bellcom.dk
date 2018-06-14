@@ -1,0 +1,12 @@
+uuid: 433c287e-c9db-4d73-99df-3674b016b23d
+langcode: da
+status: false
+dependencies:
+  module:
+    - block_content
+_core:
+  default_config_hash: 4tedlMuvQjDOdvHdw86_e-2Rt78aR7TGFMfOK8Ejppg
+id: block_content.full
+label: Fuld
+targetEntityType: block_content
+cache: true

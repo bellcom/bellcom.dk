@@ -1,0 +1,12 @@
+uuid: 2b83f091-cb17-43ec-860b-bb0d19d88d1a
+langcode: da
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: flXhTcp55yLcyy7ZLOhPGKGZobZQJdkAFVWV3LseiuI
+id: user.register
+label: 'Opret konto'
+targetEntityType: user
+cache: true

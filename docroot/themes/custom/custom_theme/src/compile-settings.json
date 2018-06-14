@@ -1,6 +1,6 @@
 {
   "options": {
-    "proxy": "http://clinique-magnolia.test"
+    "proxy": "http://bellcom.test"
   },
   "javascripts": [
     "node_modules/bootstrap-sass/assets/javascripts/bootstrap.js",

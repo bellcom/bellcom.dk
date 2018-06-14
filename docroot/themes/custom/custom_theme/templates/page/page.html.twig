@@ -322,6 +322,22 @@
                       </li>
                     {% endif %}
 
+                    {% if theme_settings.social.github.active %}
+                      <li>
+                        <a
+                          href="{{ theme_settings.social.github.url }}"
+                          target="_blank"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="{{ theme_settings.social.github.tooltip }}">
+                      <span class="social-icon social-icon--github">
+                        <span class="icon fa fa-github"></span>
+                      </span>
+                          Github
+                        </a>
+                      </li>
+                    {% endif %}
+
                   </ul>
                 </div>
               </div>

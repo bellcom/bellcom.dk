@@ -1,0 +1,68 @@
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://bellcom.test/themes/custom/custom_theme/favicon.ico'
+  use_default: 1
+schemas:
+  bootstrap: 8000
+  custom_base_theme: 8000
+  custom_theme: 8000
+features:
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+  node_user_picture: 1
+logo:
+  path: ''
+  url: ''
+  use_default: 1
+region_wells:
+  sidr_left__primary: ''
+  sidr_left__secondary: ''
+  flexy_navigation__primary: ''
+  flexy_navigation__secondary: ''
+  flexy_list__primary: ''
+  flexy_list__secondary: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  footer__contact_information: ''
+  footer__navigation: ''
+table_responsive: '-1'
+table: ''
+business_owner_name: Bellcom
+business_startup_year: ''
+address: 'Bredgade 20'
+zipcode: '6000'
+city: Kolding
+phone_system: '+4570260085'
+phone_readable: '70 26 00 85'
+email: support@bellcom.dk
+working_hours: 'Man-Fre: 09:00 - 17:00'
+facebook: 1
+facebook_url: 'https://www.facebook.com/bellcomdk'
+facebook_tooltip: 'Besøg os på facebook'
+twitter: 1
+twitter_url: 'https://twitter.com/bellcomdk'
+twitter_tooltip: 'Besøg os på Twitter'
+googleplus: 0
+googleplus_url: ''
+googleplus_tooltip: ''
+instagram: 0
+instagram_url: ''
+instagram_tooltip: ''
+linkedin: 1
+linkedin_url: 'https://www.linkedin.com/company/bellcom'
+linkedin_tooltip: 'Besøg os på LinkedIn'
+pinterest: 0
+pinterest_url: ''
+pinterest_tooltip: ''
+vimeo: 0
+vimeo_url: ''
+vimeo_tooltip: ''
+youtube: 0
+youtube_url: ''
+youtube_tooltip: ''
+github: 1
+github_url: 'https://github.com/bellcom'
+github_tooltip: 'Besøg vores Github organisation'

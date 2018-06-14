@@ -359,4 +359,37 @@ function custom_base_theme_form_system_theme_settings_alter(
       ],
     ],
   ];
+
+  // Github
+  $form['social']['github'] = [
+    '#type' => 'checkbox',
+    '#title' => t('Github'),
+    '#default_value' => theme_get_setting('github'),
+  ];
+  $form['social']['github_url'] = [
+    '#type' => 'textfield',
+    '#title' => t('Github URL'),
+    '#default_value' => theme_get_setting('github_url'),
+    '#states' => [
+      // Hide the options when the cancel notify checkbox is disabled.
+      'visible' => [
+        ':input[name="github"]' => [
+          'checked' => TRUE,
+        ],
+      ],
+    ],
+  ];
+  $form['social']['github_tooltip'] = [
+    '#type' => 'textfield',
+    '#title' => t('Text when mouseovering the link'),
+    '#default_value' => theme_get_setting('github_tooltip'),
+    '#states' => [
+      // Hide the options when the cancel notify checkbox is disabled.
+      'visible' => [
+        ':input[name="github"]' => [
+          'checked' => TRUE,
+        ],
+      ],
+    ],
+  ];
 }

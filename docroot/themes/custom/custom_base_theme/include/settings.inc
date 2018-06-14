@@ -44,6 +44,9 @@ function _custom_base_theme_collect_theme_settings() {
   $settings['social']['youtube']['active'] = theme_get_setting('youtube');
   $settings['social']['youtube']['url'] = theme_get_setting('youtube_url');
   $settings['social']['youtube']['tooltip'] = theme_get_setting('youtube_tooltip');
+  $settings['social']['github']['active'] = theme_get_setting('github');
+  $settings['social']['github']['url'] = theme_get_setting('github_url');
+  $settings['social']['github']['tooltip'] = theme_get_setting('github_tooltip');
 
   return $settings;
 }

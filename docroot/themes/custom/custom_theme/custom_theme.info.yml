@@ -1,0 +1,26 @@
+name: 'Custom theme'
+type: theme
+description: 'A beautiful custom theme.'
+core: 8.x
+screenshot: dist/images/screenshot.png
+base theme: custom_base_theme
+package: Custom
+
+regions:
+  sidr_left__primary: 'Sidr - left - primary navigation'
+  sidr_left__secondary: 'Sidr - left - secondary navigation'
+  flexy_navigation__primary: 'Flexy navigation - primary navigation'
+  flexy_navigation__secondary: 'Flexy navigation - secondary navigation'
+  flexy_list__primary: 'Flexy list - primary navigation'
+  flexy_list__secondary: 'Flexy list - secondary navigation'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  footer__contact_information: 'Footer - contact information'
+  footer__navigation: 'Footer - navigation'
+
+
+libraries:
+  - 'custom_theme/fonts'
+  - 'custom_theme/styles'
+  - 'custom_theme/javascripts'

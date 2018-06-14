@@ -1,0 +1,341 @@
+<!-- Begin - wrapper -->
+<div class="layout__wrapper">
+
+  {% if page.sidr_left__primary or page.sidr_left__secondary %}
+
+    <!-- Begin - sidr source provider -->
+    <aside class="sidr-source-provider">
+
+      <!-- Begin - navigation -->
+      <nav class="slinky-menu" role="navigation">
+
+        {% if page.sidr_left__primary %}
+          {{ page.sidr_left__primary }}
+        {% endif %}
+
+        {% if page.sidr_left__secondary %}
+          {{ page.sidr_left__secondary }}
+        {% endif %}
+
+      </nav>
+      <!-- End - navigation -->
+
+    </aside>
+    <!-- End - sidr source provider -->
+
+  {% endif %}
+
+  <!-- Begin - header static -->
+  <header class="flexy-header flexy-header--static">
+    <div class="flexy-header__row flexy-header__row--first">
+      <div class="container">
+        <div class="flexy-row">
+
+          <!-- Begin - logo -->
+          <a href="{{ url('<front>') }}" class="flexy-header__logo">
+            <img src="{{ base_path ~ directory }}/dist/images/logo.svg">
+          </a>
+          <!-- End - logo -->
+
+          <div class="flexy-spacer"></div>
+
+          {% if page.flexy_list__secondary %}
+            <!-- Begin - navigation -->
+            <nav class="flexy-header__secondary-navigation hidden-xs hidden-sm"
+                 role="navigation">
+              {{ page.flexy_list__secondary }}
+            </nav>
+            <!-- End - navigation -->
+          {% endif %}
+
+          <!-- Begin - responsive toggle -->
+          <button
+            class="flexy-header__sidebar-toggle sidr-toggle--right visible-xs visible-sm">
+            <span class="icon fa fa-bars"></span>
+          </button>
+          <!-- End - responsive toggle -->
+
+        </div>
+      </div>
+    </div>
+    <div
+      class="flexy-header__row flexy-header__row--second hidden-xs hidden-sm">
+      <div class="container">
+
+      </div>
+    </div>
+    <div class="flexy-header__row flexy-header__row--third hidden-xs hidden-sm">
+      <div class="container">
+        <div class="flexy-row">
+
+          <div class="flexy-spacer"></div>
+
+          {% if page.flexy_navigation__primary %}
+            <!-- Begin - navigation -->
+            <nav class="flexy-header__navigation__wrapper hidden-xs hidden-sm"
+                 role="navigation">
+              {{ page.flexy_navigation__primary }}
+            </nav>
+            <!-- End - navigation -->
+          {% endif %}
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End - header static -->
+
+  <!-- Begin - header sticky -->
+  <header class="flexy-header flexy-header--sticky">
+    <div class="flexy-header__row">
+      <div class="container">
+        <div class="flexy-row">
+
+          <!-- Begin - logo -->
+          <a href="{{ path('<front>') }}" class="flexy-header__logo">
+            <img src="{{ base_path ~ directory }}/dist/images/logo.svg">
+          </a>
+          <!-- End - logo -->
+
+          <div class="flexy-spacer"></div>
+
+          {% if page.flexy_navigation__primary %}
+            <!-- Begin - navigation -->
+            <nav class="flexy-header__navigation__wrapper hidden-xs hidden-sm"
+                 role="navigation">
+              {{ page.flexy_navigation__primary }}
+            </nav>
+            <!-- End - navigation -->
+          {% endif %}
+
+          <!-- Begin - responsive toggle -->
+          <button
+            class="flexy-header__sidebar-toggle sidr-toggle--right visible-xs visible-sm">
+            <span class="icon fa fa-bars"></span>
+          </button>
+          <!-- End - responsive toggle -->
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End - header sticky -->
+
+  <!-- Begin - content -->
+  <main class="layout__content" role="main">
+    <div class="container">
+
+      {# Highlighted #}
+      {% if page.highlighted %}
+        {% block highlighted %}
+          <div class="highlighted">
+            {{ page.highlighted }}
+          </div>
+        {% endblock %}
+      {% endif %}
+
+      {# Help #}
+      {% if page.help %}
+        {% block help %}
+          {{ page.help }}
+        {% endblock %}
+      {% endif %}
+
+      {# Content #}
+      {% block content %}
+        <!-- Begin - content -->
+        <a id="main-content"></a>
+
+        {{ page.content }}
+        <!-- End - content -->
+      {% endblock %}
+
+    </div>
+  </main>
+  <!-- End - content -->
+
+  <!-- Begin - footer -->
+  <footer class="layout__footer">
+    <div class="layout__footer__inner">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+
+            {% if page.footer__contact_information %}
+              <!-- Begin - contact information -->
+              <div class="layout__footer__contact-information">
+                {{ page.footer__contact_information }}
+              </div>
+              <!-- End - contact information -->
+            {% endif %}
+
+          </div>
+          <div class="col-xs-12 col-sm-4">
+
+            {% if page.footer__navigation %}
+              <!-- Begin - navigation -->
+              <div class="layout__footer__navigation">
+                {{ page.footer__navigation }}
+              </div>
+              <!-- End - navigation -->
+            {% endif %}
+
+          </div>
+          <div class="col-xs-12 col-sm-4">
+
+            <!-- Begin - social icons -->
+            <div class="layout__footer__social-icons">
+
+              <div class="partial">
+                <div class="partial__heading">
+                  <h2
+                    class="partial__heading__title">{{ 'Social icons' | t }}</h2>
+                </div>
+                <div class="partial__body">
+                  <ul class="list-unstyled">
+
+                    {% if theme_settings.social.facebook.active %}
+                      <li>
+                        <a
+                          href="{{ theme_settings.social.facebook.url }}"
+                          target="_blank"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="{{ theme_settings.social.facebook.tooltip }}">
+                      <span class="social-icon social-icon--facebook">
+                        <span class="icon fa fa-facebook-f"></span>
+                      </span>
+                          Facebook
+                        </a>
+                      </li>
+                    {% endif %}
+
+                    {% if theme_settings.social.twitter.active %}
+                      <li>
+                        <a
+                          href="{{ theme_settings.social.twitter.url }}"
+                          target="_blank"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="{{ theme_settings.social.twitter.tooltip }}">
+                      <span class="social-icon social-icon--twitter">
+                        <span class="icon fa fa-twitter"></span>
+                      </span>
+                          Twitter
+                        </a>
+                      </li>
+                    {% endif %}
+
+                    {% if theme_settings.social.googleplus.active %}
+                      <li>
+                        <a
+                          href="{{ theme_settings.social.googleplus.url }}"
+                          target="_blank"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="{{ theme_settings.social.googleplus.tooltip }}">
+                      <span class="social-icon social-icon--google-plus">
+                        <span class="icon fa fa-google-plus"></span>
+                      </span>
+                          Google+
+                        </a>
+                      </li>
+                    {% endif %}
+
+                    {% if theme_settings.social.linkedin.active %}
+                      <li>
+                        <a
+                          href="{{ theme_settings.social.linkedin.url }}"
+                          target="_blank"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="{{ theme_settings.social.linkedin.tooltip }}">
+                      <span class="social-icon social-icon--linkedin">
+                        <span class="icon fa fa-linkedin"></span>
+                      </span>
+                          LinkedIn
+                        </a>
+                      </li>
+                    {% endif %}
+
+                    {% if theme_settings.social.pinterest.active %}
+                      <li>
+                        <a
+                          href="{{ theme_settings.social.pinterest.url }}"
+                          target="_blank"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="{{ theme_settings.social.pinterest.tooltip }}">
+                      <span class="social-icon social-icon--pinterest">
+                        <span class="icon fa fa-pinterest"></span>
+                      </span>
+                          Pinterest
+                        </a>
+                      </li>
+                    {% endif %}
+
+                    {% if theme_settings.social.instagram.active %}
+                      <li>
+                        <a
+                          href="{{ theme_settings.social.instagram.url }}"
+                          target="_blank"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="{{ theme_settings.social.instagram.tooltip }}">
+                      <span class="social-icon social-icon--instagram">
+                        <span class="icon fa fa-instagram"></span>
+                      </span>
+                          Instagram
+                        </a>
+                      </li>
+                    {% endif %}
+
+                    {% if theme_settings.social.youtube.active %}
+                      <li>
+                        <a
+                          href="{{ theme_settings.social.youtube.url }}"
+                          target="_blank"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="{{ theme_settings.social.youtube.tooltip }}">
+                      <span class="social-icon social-icon--youtube">
+                        <span class="icon fa fa-youtube"></span>
+                      </span>
+                          Youtube
+                        </a>
+                      </li>
+                    {% endif %}
+
+                    {% if theme_settings.social.vimeo.active %}
+                      <li>
+                        <a
+                          href="{{ theme_settings.social.vimeo.url }}"
+                          target="_blank"
+                          data-toggle="tooltip"
+                          data-placement="top"
+                          title="{{ theme_settings.social.vimeo.tooltip }}">
+                      <span class="social-icon social-icon--vimeo">
+                        <span class="icon fa fa-vimeo"></span>
+                      </span>
+                          Vimeo
+                        </a>
+                      </li>
+                    {% endif %}
+
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+            <!-- End - social icons -->
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- End - footer -->
+
+</div>
+<!-- End - wrapper -->

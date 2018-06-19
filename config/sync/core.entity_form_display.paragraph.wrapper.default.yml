@@ -3,9 +3,9 @@ langcode: da
 status: true
 dependencies:
   config:
-    - field.field.paragraph.section.field_background_color
-    - field.field.paragraph.section.field_paragraphs
-    - paragraphs.paragraphs_type.section
+    - field.field.paragraph.wrapper.field_background_color
+    - field.field.paragraph.wrapper.field_paragraphs
+    - paragraphs.paragraphs_type.wrapper
   module:
     - field_group
     - paragraphs
@@ -23,9 +23,9 @@ third_party_settings:
         description: ''
         required_fields: true
       label: Udseende
-id: paragraph.section.default
+id: paragraph.wrapper.default
 targetEntityType: paragraph
-bundle: section
+bundle: wrapper
 mode: default
 content:
   field_background_color:

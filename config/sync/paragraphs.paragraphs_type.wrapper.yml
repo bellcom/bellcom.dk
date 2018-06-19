@@ -7,8 +7,8 @@ dependencies:
 third_party_settings:
   paragraphs_library:
     allow_library_conversion: true
-id: section
-label: Section
+id: wrapper
+label: Wrapper
 icon_uuid: null
 description: ''
 behavior_plugins: {  }

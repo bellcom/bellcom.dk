@@ -1,26 +1,26 @@
-uuid: 60fc0d07-a66a-4136-912a-c00a3e89eaf9
+uuid: 569e0e44-6419-48ac-a6df-eff806b5df9e
 langcode: da
 status: true
 dependencies:
   config:
-    - field.field.paragraph.wrapper.field_background_color
-    - field.field.paragraph.wrapper.field_paragraphs
-    - paragraphs.paragraphs_type.wrapper
+    - field.field.paragraph.section.field_background_color
+    - field.field.paragraph.section.field_paragraphs
+    - paragraphs.paragraphs_type.section
   module:
     - entity_reference_revisions
-id: paragraph.wrapper.default
+id: paragraph.section.default
 targetEntityType: paragraph
-bundle: wrapper
+bundle: section
 mode: default
 content:
   field_paragraphs:
-    type: entity_reference_revisions_entity_view
     weight: 0
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
     region: content
 hidden:
   field_background_color: true

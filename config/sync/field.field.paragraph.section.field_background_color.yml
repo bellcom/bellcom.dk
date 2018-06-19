@@ -1,19 +1,19 @@
-uuid: 7ef082cb-11a3-4c1d-93ef-aab2357d19cd
+uuid: 37624a8e-de63-4f8e-854c-29953ab5a3e4
 langcode: da
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_background_color
-    - paragraphs.paragraphs_type.wrapper
+    - paragraphs.paragraphs_type.section
     - taxonomy.vocabulary.background_color
-id: paragraph.wrapper.field_background_color
+id: paragraph.section.field_background_color
 field_name: field_background_color
 entity_type: paragraph
-bundle: wrapper
+bundle: section
 label: Baggrundsfarve
 description: ''
-required: true
-translatable: false
+required: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

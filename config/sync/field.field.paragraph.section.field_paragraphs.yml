@@ -1,47 +1,45 @@
-uuid: f51a4944-fae4-40a4-bfbd-01ad335ef201
+uuid: 33445eed-ddb6-4386-8616-71a2ee84ae6a
 langcode: da
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_paragraphs
-    - paragraphs.paragraphs_type.action_box
-    - paragraphs.paragraphs_type.media
-    - paragraphs.paragraphs_type.text
-    - paragraphs.paragraphs_type.wrapper
+    - paragraphs.paragraphs_type.section
   module:
     - entity_reference_revisions
-id: paragraph.wrapper.field_paragraphs
+id: paragraph.section.field_paragraphs
 field_name: field_paragraphs
 entity_type: paragraph
-bundle: wrapper
+bundle: section
 label: Afsnit
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
+    negate: 1
     target_bundles:
-      action_box: action_box
-      media: media
-      text: text
+      section: section
     target_bundles_drag_drop:
-      wrapper:
-        weight: 6
-        enabled: false
-      action_box:
+      section:
         enabled: true
         weight: 7
-      from_library:
+      action_box:
         weight: 8
         enabled: false
-      media:
-        enabled: true
+      from_library:
         weight: 9
-      text:
-        enabled: true
+        enabled: false
+      media:
         weight: 10
+        enabled: false
+      text:
+        weight: 11
+        enabled: false
+      wrapper:
+        weight: 12
+        enabled: false
 field_type: entity_reference_revisions

@@ -1,0 +1,49 @@
+{%
+  set classes = [
+    node.bundle|clean_class,
+    node.isPromoted() ? 'is-promoted',
+    node.isSticky() ? 'is-sticky',
+    not node.isPublished() ? 'is-unpublished',
+    view_mode ? view_mode|clean_class,
+    'clearfix',
+  ]
+%}
+<article{{ attributes.addClass(classes) }}>
+
+  <div class="entity-{{ view_mode|clean_class }}__header">
+
+    {# Begin - heading #}
+    {% if node.field_heading.value %}
+      <div class="entity-{{ view_mode|clean_class }}__heading">
+        <h1 class="entity-{{ view_mode|clean_class }}__heading__title">{{ content.field_heading }}</h1>
+      </div>
+    {% endif %}
+    {# End - heading #}
+
+    {# Begin - subheading #}
+    {% if node.field_subheading.value %}
+      <div class="entity-{{ view_mode|clean_class }}__subheading">
+        {{ content.field_subheading }}
+      </div>
+    {% endif %}
+    {# End - subheading #}
+
+    {# Begin - body #}
+    {% if node.field_body.value %}
+      <div class="entity-{{ view_mode|clean_class }}__body">
+        {{ content.field_body }}
+      </div>
+    {% endif %}
+    {# End - body #}
+
+  </div>
+
+  {# Begin - paragraphs #}
+  {% if node.field_paragraphs.value %}
+    <div class="entity-{{ view_mode|clean_class }}__paragraphs">
+      {{ content.field_paragraphs }}
+    </div>
+  {% endif %}
+  {# End - paragraphs #}
+
+</article>

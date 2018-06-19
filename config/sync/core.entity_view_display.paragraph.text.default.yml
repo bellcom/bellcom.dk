@@ -30,8 +30,8 @@ content:
     type: string
     region: content
   field_subheading:
-    weight: 3
-    label: above
+    weight: 1
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default

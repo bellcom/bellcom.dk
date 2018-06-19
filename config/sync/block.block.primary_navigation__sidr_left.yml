@@ -1,0 +1,24 @@
+uuid: 65eb36db-bb83-4521-9953-ae43b8b4c721
+langcode: da
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - custom_theme
+id: primary_navigation__sidr_left
+theme: custom_theme
+region: sidr_left__primary
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

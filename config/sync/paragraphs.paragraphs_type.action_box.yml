@@ -1,0 +1,14 @@
+uuid: 806c3085-0b4f-49e3-9747-60228aab651b
+langcode: da
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: action_box
+label: 'Action box'
+icon_uuid: null
+description: 'Simpel bannerlignende boks med mulighed for valg af fuld baggrundsfarve eller et baggrundsbillede.'
+behavior_plugins: {  }

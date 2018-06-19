@@ -1,0 +1,43 @@
+{% set classes = [
+  'boxy',
+  'boxy--' ~ paragraph.bundle|clean_class,
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  not paragraph.isPublished() ? 'paragraph--unpublished'
+] %}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}  style="background-image: url({{ paragraph.field_background_image.entity.fileuri | image_style(content.field_background_image[0]['#image_style']) }});">
+    {% block content %}
+
+      <div class="paragraph__content">
+
+        {# Begin - heading #}
+        {% if paragraph.field_heading.value %}
+          <div class="paragraph__heading">
+            {{ content.field_heading }}
+          </div>
+        {% endif %}
+        {# End - heading #}
+
+        {# Begin - subheading #}
+        {% if paragraph.field_subheading.value %}
+          <div class="paragraph__subheading">
+            {{ content.field_subheading }}
+          </div>
+        {% endif %}
+        {# End - subheading #}
+
+        {# Begin - body #}
+        {% if paragraph.field_body.value %}
+          <div class="paragraph__body">
+            {{ content.field_body }}
+          </div>
+        {% endif %}
+        {# End - body #}
+
+      </div>
+
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

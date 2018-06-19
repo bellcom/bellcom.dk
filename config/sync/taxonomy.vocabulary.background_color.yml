@@ -1,0 +1,9 @@
+uuid: 65f4948a-7b9c-4ade-95cc-9639f301dfcf
+langcode: da
+status: true
+dependencies: {  }
+name: Baggrundsfarve
+vid: background_color
+description: 'Liste over tilgængelige baggrundsfarver'
+hierarchy: 0
+weight: 0

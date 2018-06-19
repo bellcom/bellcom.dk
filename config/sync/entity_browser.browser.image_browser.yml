@@ -1,0 +1,28 @@
+uuid: b48ca302-e871-4453-ba0c-48aa915f300d
+langcode: da
+status: true
+dependencies: {  }
+name: image_browser
+label: 'Image browser'
+display: modal
+display_configuration:
+  width: '650'
+  height: '500'
+  link_text: 'Select entities'
+  auto_open: false
+selection_display: no_display
+selection_display_configuration: {  }
+widget_selector: tabs
+widget_selector_configuration: {  }
+widgets:
+  a81cad77-f9b8-4419-9c6b-c0d4f3f6fb0c:
+    settings:
+      extensions: 'jpg jpeg png gif'
+      media_type: image
+      upload_location: 'public://'
+      multiple: '1'
+      submit_text: 'Select files'
+    uuid: a81cad77-f9b8-4419-9c6b-c0d4f3f6fb0c
+    weight: 1
+    label: Upload
+    id: media_image_upload

@@ -5,8 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_paragraphs
     - node.type.page
-    - paragraphs.paragraphs_type.from_library
-    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.wrapper
   module:
     - entity_reference_revisions
 id: node.page.field_paragraphs
@@ -24,13 +23,21 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      from_library: from_library
-      text: text
+      wrapper: wrapper
     target_bundles_drag_drop:
       from_library:
-        enabled: true
         weight: 2
+        enabled: false
       text:
-        enabled: true
         weight: 3
+        enabled: false
+      media:
+        weight: 5
+        enabled: false
+      wrapper:
+        enabled: true
+        weight: 6
+      action_box:
+        weight: 7
+        enabled: false
 field_type: entity_reference_revisions

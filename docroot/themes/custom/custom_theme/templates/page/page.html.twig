@@ -37,16 +37,16 @@
           </a>
           <!-- End - logo -->
 
-          <div class="flexy-spacer"></div>
+            <div class="flexy-spacer"></div>
 
-          {% if page.flexy_list__secondary %}
-            <!-- Begin - navigation -->
-            <nav class="flexy-header__secondary-navigation hidden-xs hidden-sm"
-                 role="navigation">
-              {{ page.flexy_list__secondary }}
-            </nav>
-            <!-- End - navigation -->
-          {% endif %}
+            {% if page.flexy_navigation__primary %}
+                <!-- Begin - navigation -->
+                <nav class="flexy-header__navigation__wrapper hidden-xs hidden-sm"
+                     role="navigation">
+                    {{ page.flexy_navigation__primary }}
+                </nav>
+                <!-- End - navigation -->
+            {% endif %}
 
           <!-- Begin - responsive toggle -->
           <button
@@ -54,30 +54,6 @@
             <span class="icon fa fa-bars"></span>
           </button>
           <!-- End - responsive toggle -->
-
-        </div>
-      </div>
-    </div>
-    <div
-      class="flexy-header__row flexy-header__row--second hidden-xs hidden-sm">
-      <div class="container">
-
-      </div>
-    </div>
-    <div class="flexy-header__row flexy-header__row--third hidden-xs hidden-sm">
-      <div class="container">
-        <div class="flexy-row">
-
-          <div class="flexy-spacer"></div>
-
-          {% if page.flexy_navigation__primary %}
-            <!-- Begin - navigation -->
-            <nav class="flexy-header__navigation__wrapper hidden-xs hidden-sm"
-                 role="navigation">
-              {{ page.flexy_navigation__primary }}
-            </nav>
-            <!-- End - navigation -->
-          {% endif %}
 
         </div>
       </div>

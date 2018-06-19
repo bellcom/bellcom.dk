@@ -1,0 +1,37 @@
+uuid: 98d964b5-f447-41b7-a341-d519165da04b
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.node.employee.field_department
+    - field.field.node.employee.field_phone_readable
+    - field.field.node.employee.field_phone_system
+    - node.type.employee
+  module:
+    - telephone
+    - user
+id: node.employee.default
+targetEntityType: node
+bundle: employee
+mode: default
+content:
+  field_department:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  field_phone_readable:
+    weight: 1
+    label: above
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
+hidden:
+  field_phone_system: true
+  langcode: true
+  links: true

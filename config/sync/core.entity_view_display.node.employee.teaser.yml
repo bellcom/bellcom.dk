@@ -1,0 +1,36 @@
+uuid: 3882216e-375f-4291-8b79-7747eff8c219
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.employee.field_phone_readable
+    - field.field.node.employee.field_phone_system
+    - node.type.employee
+  module:
+    - telephone
+    - user
+id: node.employee.teaser
+targetEntityType: node
+bundle: employee
+mode: teaser
+content:
+  field_phone_readable:
+    type: telephone_link
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+  field_phone_system:
+    type: telephone_link
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  links: true

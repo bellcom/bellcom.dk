@@ -1,0 +1,23 @@
+uuid: 0f315e3a-1bf8-4a15-910a-e4093295ed00
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_video_url
+    - paragraphs.paragraphs_type.media
+  module:
+    - link
+id: paragraph.media.field_video_url
+field_name: field_video_url
+entity_type: paragraph
+bundle: media
+label: 'Video URL'
+description: "Eks. https://www.youtube.com/watch?v=1G0YkQ859Fg\r\nDu kan her tilføje en URL til eks. Youtube. Videoen vil herefter åbne i en modal ved klik på billedet.\r\n"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

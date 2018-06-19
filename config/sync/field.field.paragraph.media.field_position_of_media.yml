@@ -1,0 +1,23 @@
+uuid: ca893d64-39b6-4235-b40e-c8369c294c06
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_position_of_media
+    - paragraphs.paragraphs_type.media
+  module:
+    - options
+id: paragraph.media.field_position_of_media
+field_name: field_position_of_media
+entity_type: paragraph
+bundle: media
+label: 'Placering af medie'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

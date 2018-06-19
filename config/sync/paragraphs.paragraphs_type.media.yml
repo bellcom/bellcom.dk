@@ -1,0 +1,14 @@
+uuid: 7344a0ac-23a9-4f96-9807-9951ff719c05
+langcode: da
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: media
+label: Medie
+icon_uuid: null
+description: 'Indeholder overskrift, underrubrik, brødtekst, medie samt mulighed for valg af placering af medie'
+behavior_plugins: {  }

@@ -1,0 +1,9 @@
+uuid: 50efacb4-3e88-4cd6-9dc7-0b646b681c1f
+langcode: da
+status: true
+dependencies: {  }
+name: Afdelinger
+vid: departments
+description: ''
+hierarchy: 0
+weight: 0

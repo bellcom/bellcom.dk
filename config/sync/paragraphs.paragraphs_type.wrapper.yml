@@ -1,0 +1,14 @@
+uuid: bc6f4d6f-9a6d-4283-8aa5-30a0655c2774
+langcode: da
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: wrapper
+label: Wrapper
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,74 @@
+uuid: 204548ac-c18f-4781-b57e-bd65acde2c0e
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.media.field_body
+    - field.field.paragraph.media.field_heading
+    - field.field.paragraph.media.field_media
+    - field.field.paragraph.media.field_position_of_media
+    - field.field.paragraph.media.field_subheading
+    - field.field.paragraph.media.field_video_url
+    - image.style.large
+    - paragraphs.paragraphs_type.media
+  module:
+    - focal_point
+    - link
+    - text
+id: paragraph.media.default
+targetEntityType: paragraph
+bundle: media
+mode: default
+content:
+  field_body:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_heading:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_media:
+    weight: 3
+    settings:
+      preview_image_style: large
+      progress_indicator: throbber
+      preview_link: true
+      offsets: '50,50'
+    third_party_settings: {  }
+    type: image_focal_point
+    region: content
+  field_position_of_media:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_subheading:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_video_url:
+    weight: 5
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,11 @@
+uuid: c238fa2b-beb6-4d86-addd-c97ad03c8591
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.employee
+id: node.employee
+target_entity_type_id: node
+target_bundle: employee
+default_langcode: site_default
+language_alterable: false

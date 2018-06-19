@@ -1,0 +1,21 @@
+uuid: b7e4cb11-56f1-42cd-9ffd-7d4e7c2caa4c
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subheading
+    - paragraphs.paragraphs_type.media
+  module:
+    - text
+id: paragraph.media.field_subheading
+field_name: field_subheading
+entity_type: paragraph
+bundle: media
+label: Underrubrik
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

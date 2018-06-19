@@ -1,0 +1,21 @@
+uuid: 12e4c3a9-7fdd-41d4-a214-14f0d0e740ee
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone_system
+    - node.type.employee
+  module:
+    - telephone
+id: node.employee.field_phone_system
+field_name: field_phone_system
+entity_type: node
+bundle: employee
+label: 'Telefon nr. (system)'
+description: 'Eks. 004512345678'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

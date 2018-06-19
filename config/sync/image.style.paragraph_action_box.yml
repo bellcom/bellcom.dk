@@ -1,0 +1,17 @@
+uuid: 2e2a62c6-7aa6-40e5-9219-03d2baa2bb69
+langcode: da
+status: true
+dependencies:
+  module:
+    - focal_point
+name: paragraph_action_box
+label: 'Paragraph - action box'
+effects:
+  39973afe-28f1-48c6-a583-1cab0d2ab14f:
+    uuid: 39973afe-28f1-48c6-a583-1cab0d2ab14f
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 400
+      crop_type: focal_point

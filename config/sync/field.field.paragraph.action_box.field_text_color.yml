@@ -1,0 +1,23 @@
+uuid: d1fc297e-328e-4aae-8907-b9f9e4c87437
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_color
+    - paragraphs.paragraphs_type.action_box
+  module:
+    - options
+id: paragraph.action_box.field_text_color
+field_name: field_text_color
+entity_type: paragraph
+bundle: action_box
+label: Tekstfarve
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: dark
+default_value_callback: ''
+settings: {  }
+field_type: list_string

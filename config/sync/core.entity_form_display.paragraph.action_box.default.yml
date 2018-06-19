@@ -1,0 +1,79 @@
+uuid: 964b7e8f-d92f-4a76-b0ce-5c77fcac1c87
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.action_box.field_background_color
+    - field.field.paragraph.action_box.field_background_image
+    - field.field.paragraph.action_box.field_body
+    - field.field.paragraph.action_box.field_heading
+    - field.field.paragraph.action_box.field_text_color
+    - image.style.paragraph_action_box
+    - paragraphs.paragraphs_type.action_box
+  module:
+    - field_group
+    - focal_point
+    - text
+third_party_settings:
+  field_group:
+    group_appearance:
+      children:
+        - field_text_color
+        - field_background_image
+        - field_background_color
+      parent_name: ''
+      weight: 20
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Udseende
+id: paragraph.action_box.default
+targetEntityType: paragraph
+bundle: action_box
+mode: default
+content:
+  field_background_color:
+    weight: 26
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_background_image:
+    weight: 25
+    settings:
+      preview_image_style: paragraph_action_box
+      progress_indicator: throbber
+      preview_link: true
+      offsets: '50,50'
+    third_party_settings: {  }
+    type: image_focal_point
+    region: content
+  field_body:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_heading:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_text_color:
+    weight: 24
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

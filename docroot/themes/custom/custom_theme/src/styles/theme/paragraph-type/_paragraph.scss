@@ -1,0 +1,95 @@
+// |--------------------------------------------------------------------------
+// | Paragraph
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .paragraph--type--media
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+@mixin paragraph-mixin() {}
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+.paragraph__heading {
+
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+  }
+
+  + .paragraph__subheading {
+    margin-top: 10px;
+  }
+
+  + .paragraph__body {
+    margin-top: floor( ($grid-gutter-width / 2) );
+  }
+}
+
+.paragraph__subheading {
+  font-size: $font-size-large;
+
+  + .paragraph__body {
+    margin-top: floor( ($grid-gutter-width / 2) );
+  }
+}
+
+.paragraph__content {
+  padding: $grid-gutter-width;
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+.paragraph--background-color-primary {
+  background-color: $brand-primary;
+}
+
+.paragraph--background-color-secondary {
+  background-color: $brand-secondary;
+}
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@media #{$breakpoint-mobile-and-up} {}
+
+// Mobile - only
+@media #{$breakpoint-mobile-only} {}
+
+// Tablet - and up
+@media #{$breakpoint-tablet-and-up} {}
+
+// Tablet - only
+@media #{$breakpoint-tablet-only} {}
+
+// Desktop - and up
+@media #{$breakpoint-desktop-and-up} {}
+
+// Desktop - only
+@media #{$breakpoint-desktop-only} {}
+
+// Large desktop - and up
+@media #{$breakpoint-large-desktop-and-up} {}
+
+// Print
+@media print {}
+
+// Touch
+.touchevents {}
+
+// No touch
+.no-touchevents {}

@@ -1,0 +1,21 @@
+uuid: e6b5f6d0-3282-4012-8d18-76965d9b7b22
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phone_readable
+    - node.type.employee
+  module:
+    - telephone
+id: node.employee.field_phone_readable
+field_name: field_phone_readable
+entity_type: node
+bundle: employee
+label: 'Telefon nr. (læsbart)'
+description: '+45 12 34 56 78'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

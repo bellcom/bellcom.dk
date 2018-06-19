@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Riona Sans Regular";
+  src: url("../fonts/riona_sans/6caf4d27e271767286c1ddbf1a582b44.eot");
+  /* IE9*/
+  src: url("../fonts/riona_sans/6caf4d27e271767286c1ddbf1a582b44.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("../fonts/riona_sans/6caf4d27e271767286c1ddbf1a582b44.woff2") format("woff2"), /* chrome、firefox */
+  url("../fonts/riona_sans/6caf4d27e271767286c1ddbf1a582b44.woff") format("woff"), /* chrome、firefox */
+  url("../fonts/riona_sans/6caf4d27e271767286c1ddbf1a582b44.ttf") format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url("../fonts/riona_sans/6caf4d27e271767286c1ddbf1a582b44.svg") format("svg");
+  /* iOS 4.1- */
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,102 @@
+// |--------------------------------------------------------------------------
+// | Paragraph
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .paragraph--type--media
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+@mixin paragraph-mixin() {}
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+.paragraph--type--media {
+
+  .paragraph__media {
+    min-height: 300px;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &.paragraph--reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@media #{$breakpoint-mobile-and-up} {}
+
+// Mobile - only
+@media #{$breakpoint-mobile-only} {}
+
+// Tablet - and up
+@media #{$breakpoint-tablet-and-up} {
+
+  .paragraph--type--media {
+    display: flex;
+
+    min-height: 380px;
+
+    .paragraph__content {
+      display: flex;
+
+      flex-direction: column;
+      justify-content: center;
+      flex-basis: 50%;
+    }
+
+    .paragraph__media {
+      flex-basis: 50%;
+    }
+
+    &.paragraph--reverse {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+// Tablet - only
+@media #{$breakpoint-tablet-only} {}
+
+// Desktop - and up
+@media #{$breakpoint-desktop-and-up} {
+
+  .paragraph--type--media {
+    min-height: 450px;
+  }
+}
+
+// Desktop - only
+@media #{$breakpoint-desktop-only} {}
+
+// Large desktop - and up
+@media #{$breakpoint-large-desktop-and-up} {}
+
+// Print
+@media print {}
+
+// Touch
+.touchevents {}
+
+// No touch
+.no-touchevents {}

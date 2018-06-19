@@ -1,0 +1,31 @@
+uuid: 2bb6978e-fd95-44de-aa70-8ea9a25dae1f
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.background_color.field_machine_name
+    - taxonomy.vocabulary.background_color
+  module:
+    - text
+id: taxonomy_term.background_color.default
+targetEntityType: taxonomy_term
+bundle: background_color
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_machine_name:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  langcode: true

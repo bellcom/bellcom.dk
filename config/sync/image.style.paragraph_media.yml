@@ -1,0 +1,17 @@
+uuid: 9f4fccda-a739-4aae-80cf-eda13a934736
+langcode: da
+status: true
+dependencies:
+  module:
+    - focal_point
+name: paragraph_media
+label: 'Paragraph - medie'
+effects:
+  5bbff39e-b7e2-4b3d-8bea-4fccc9339485:
+    uuid: 5bbff39e-b7e2-4b3d-8bea-4fccc9339485
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 700
+      height: 500
+      crop_type: focal_point

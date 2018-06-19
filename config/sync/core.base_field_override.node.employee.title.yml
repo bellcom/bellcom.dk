@@ -1,0 +1,18 @@
+uuid: 6e313386-c9b9-40b2-9323-4c45df7127cd
+langcode: da
+status: true
+dependencies:
+  config:
+    - node.type.employee
+id: node.employee.title
+field_name: title
+entity_type: node
+bundle: employee
+label: Navn
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

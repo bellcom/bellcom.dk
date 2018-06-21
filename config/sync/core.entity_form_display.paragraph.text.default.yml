@@ -3,17 +3,53 @@ langcode: da
 status: true
 dependencies:
   config:
+    - field.field.paragraph.text.field_background_color
+    - field.field.paragraph.text.field_background_image
     - field.field.paragraph.text.field_body
     - field.field.paragraph.text.field_heading
     - field.field.paragraph.text.field_subheading
+    - image.style.paragraph_background_image
     - paragraphs.paragraphs_type.text
   module:
+    - field_group
+    - focal_point
     - text
+third_party_settings:
+  field_group:
+    group_appearance:
+      children:
+        - field_background_color
+        - field_background_image
+      parent_name: ''
+      weight: 20
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Udseende
 id: paragraph.text.default
 targetEntityType: paragraph
 bundle: text
 mode: default
 content:
+  field_background_color:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_background_image:
+    weight: 5
+    settings:
+      preview_image_style: paragraph_background_image
+      progress_indicator: throbber
+      preview_link: true
+      offsets: '50,50'
+    third_party_settings: {  }
+    type: image_focal_point
+    region: content
   field_body:
     weight: 2
     settings:

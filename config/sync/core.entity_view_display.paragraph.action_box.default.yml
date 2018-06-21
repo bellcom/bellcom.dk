@@ -7,11 +7,13 @@ dependencies:
     - field.field.paragraph.action_box.field_background_image
     - field.field.paragraph.action_box.field_body
     - field.field.paragraph.action_box.field_heading
+    - field.field.paragraph.action_box.field_link
     - field.field.paragraph.action_box.field_text_color
     - image.style.paragraph_action_box
     - paragraphs.paragraphs_type.action_box
   module:
     - image
+    - link
     - text
 id: paragraph.action_box.default
 targetEntityType: paragraph
@@ -41,6 +43,18 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
     region: content
 hidden:
   field_background_color: true

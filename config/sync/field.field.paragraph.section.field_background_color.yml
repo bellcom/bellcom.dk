@@ -6,15 +6,19 @@ dependencies:
     - field.storage.paragraph.field_background_color
     - paragraphs.paragraphs_type.section
     - taxonomy.vocabulary.background_color
+  content:
+    - 'taxonomy_term:background_color:f7a69fd2-7f24-406f-a8a3-f52388412b5d'
 id: paragraph.section.field_background_color
 field_name: field_background_color
 entity_type: paragraph
 bundle: section
 label: Baggrundsfarve
 description: ''
-required: false
+required: true
 translatable: true
-default_value: {  }
+default_value:
+  -
+    target_uuid: f7a69fd2-7f24-406f-a8a3-f52388412b5d
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'

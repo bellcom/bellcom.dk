@@ -33,7 +33,7 @@
 
           <!-- Begin - logo -->
           <a href="{{ url('<front>') }}" class="flexy-header__logo">
-            <img src="{{ base_path ~ directory }}/dist/images/logo.svg">
+            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIwLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyNTAgMTAwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMTAwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzFDMUMxQzt9Cjwvc3R5bGU+CjxnPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTk5LjQsNzYuMmMwLDAuMi0wLjIsMC40LTAuNCwwLjRoLThjLTAuMiwwLTAuNC0wLjItMC40LTAuNFYyMy45YzAtMC4yLDAuMi0wLjQsMC40LTAuNGg4CgkJYzAuMiwwLDAuNCwwLjIsMC40LDAuNFY3Ni4yeiIvPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTExMS43LDc2LjJjMCwwLjItMC4yLDAuNC0wLjQsMC40aC04Yy0wLjIsMC0wLjQtMC4yLTAuNC0wLjRWMjMuOWMwLTAuMiwwLjItMC40LDAuNC0wLjRoOAoJCWMwLjIsMCwwLjQsMC4yLDAuNCwwLjRWNzYuMnoiLz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik02NSw1NC4zbDUuNyw1LjdjMC4yLDAuMiwwLjQsMC4yLDAuNiwwbDE0LjktMTQuOWMwLjgtMC44LDEuMy0yLDEuMy0zLjFjMC0xLjItMC41LTIuMy0xLjMtMy4xCgkJYy00LjMtNC4zLTEwLTYuNi0xNi02LjZjLTYuMSwwLTExLjgsMi40LTE2LDYuNmMtMi4xLDIuMS0zLjgsNC42LTQuOSw3LjNjLTMuNi04LjItMTEuNy0xNC0yMS4xLTE0Yy01LjIsMC0xMCwxLjgtMTMuOCw0Ljd2LTEzCgkJYzAtMC4yLTAuMi0wLjQtMC40LTAuNEg2Yy0wLjIsMC0wLjQsMC4yLTAuNCwwLjRWNTVjMCwxMi41LDEwLjIsMjIuNywyMi43LDIyLjdjOS40LDAsMTcuNS01LjcsMjAuOS0xMy45YzEuMSwyLjcsMi44LDUuMSw0LjksNy4zCgkJYzQuMyw0LjMsMTAsNi42LDE2LDYuNmM1LjksMCwxMS41LTIuMywxNS43LTYuNGMwLjItMC4yLDAuMi0wLjQsMC0wLjZMODAuMiw2NWMtMC4yLTAuMi0wLjQtMC4yLTAuNiwwYy0yLjYsMi40LTUuOSwzLjgtOS41LDMuOAoJCWMtMy43LDAtNy4yLTEuNC05LjgtNC4xYy0yLjYtMi42LTQuMS02LjEtNC4xLTkuOHMxLjQtNy4yLDQuMS05LjhjNC4zLTQuMywxMC44LTUuMiwxNS45LTIuNkw2NSw1My43QzY0LjksNTMuOSw2NC45LDU0LjIsNjUsNTQuMwoJCXogTTI4LjIsNjguOGMtNy42LDAtMTMuOC02LjItMTMuOC0xMy44czYuMi0xMy44LDEzLjgtMTMuOFM0Miw0Ny40LDQyLDU1QzQyLjEsNjIuNiwzNS45LDY4LjgsMjguMiw2OC44eiIvPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTEzNy43LDQxLjFjMy4zLDAsNi41LDEuMiw5LDMuNGMwLjIsMC4yLDAuNCwwLjIsMC42LDBsMC4xLTAuMWMxLjEtMi40LDIuNi00LjcsNC4zLTYuNgoJCWMwLjItMC4yLDAuMS0wLjQsMC0wLjZjLTQtMy4xLTguOS00LjktMTQtNC45QzEyNS4yLDMyLjMsMTE1LDQyLjUsMTE1LDU1czEwLjIsMjIuNywyMi43LDIyLjdjNS4xLDAsMTAuMS0xLjgsMTQtNC45CgkJYzAuMi0wLjIsMC4yLTAuNCwwLTAuNmMtMS44LTItMy4yLTQuMi00LjMtNi42YzAsMCwwLTAuMS0wLjEtMC4xYy0wLjItMC4yLTAuNC0wLjItMC42LDBjLTIuNSwyLjItNS43LDMuNC05LDMuNAoJCWMtNy42LDAtMTMuOC02LjItMTMuOC0xMy44QzEyMy44LDQ3LjMsMTMwLDQxLjEsMTM3LjcsNDEuMXoiLz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0yMjEuMSwzMi4yYy00LjQsMC04LjcsMS4zLTEyLjMsMy43Yy0zLjYtMi4zLTcuOC0zLjctMTIuMy0zLjdjLTQuNCwwLTguNiwxLjMtMTIuMywzLjdsMCwwCgkJYy0zLjUtMi4zLTcuOC0zLjYtMTIuMy0zLjZjLTEyLjUsMC0yMi43LDEwLjItMjIuNywyMi43czEwLjIsMjIuNywyMi43LDIyLjdzMjIuNy0xMC4yLDIyLjctMjIuN2MwLTQuNy0xLjQtOS0zLjgtMTIuNgoJCWMxLjgtMC44LDMuNy0xLjMsNS44LTEuM2M3LjYsMCwxMy44LDYuMiwxMy44LDEzLjh2MjEuNGMwLDAuMiwwLjIsMC40LDAuNCwwLjRoOGMwLjIsMCwwLjQtMC4yLDAuNC0wLjRWNTQuOQoJCWMwLTQuNi0xLjQtOC45LTMuOC0xMi41YzEuOC0wLjgsMy44LTEuMyw1LjgtMS4zYzcuNiwwLDEzLjgsNi4yLDEzLjgsMTMuOHYyMS40YzAsMC4yLDAuMiwwLjQsMC40LDAuNGg4YzAuMiwwLDAuNC0wLjIsMC40LTAuNAoJCVY1NC45QzI0My43LDQyLjQsMjMzLjUsMzIuMiwyMjEuMSwzMi4yeiBNMTcxLjgsNjguOGMtNy42LDAtMTMuOC02LjItMTMuOC0xMy44czYuMi0xMy44LDEzLjgtMTMuOHMxMy44LDYuMiwxMy44LDEzLjgKCQlTMTc5LjQsNjguOCwxNzEuOCw2OC44eiIvPgo8L2c+Cjwvc3ZnPgo=">
           </a>
           <!-- End - logo -->
 
@@ -69,7 +69,7 @@
 
           <!-- Begin - logo -->
           <a href="{{ path('<front>') }}" class="flexy-header__logo">
-            <img src="{{ base_path ~ directory }}/dist/images/logo.svg">
+            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDIwLjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyNTAgMTAwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMTAwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+Cgkuc3Qwe2ZpbGw6IzFDMUMxQzt9Cjwvc3R5bGU+CjxnPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTk5LjQsNzYuMmMwLDAuMi0wLjIsMC40LTAuNCwwLjRoLThjLTAuMiwwLTAuNC0wLjItMC40LTAuNFYyMy45YzAtMC4yLDAuMi0wLjQsMC40LTAuNGg4CgkJYzAuMiwwLDAuNCwwLjIsMC40LDAuNFY3Ni4yeiIvPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTExMS43LDc2LjJjMCwwLjItMC4yLDAuNC0wLjQsMC40aC04Yy0wLjIsMC0wLjQtMC4yLTAuNC0wLjRWMjMuOWMwLTAuMiwwLjItMC40LDAuNC0wLjRoOAoJCWMwLjIsMCwwLjQsMC4yLDAuNCwwLjRWNzYuMnoiLz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik02NSw1NC4zbDUuNyw1LjdjMC4yLDAuMiwwLjQsMC4yLDAuNiwwbDE0LjktMTQuOWMwLjgtMC44LDEuMy0yLDEuMy0zLjFjMC0xLjItMC41LTIuMy0xLjMtMy4xCgkJYy00LjMtNC4zLTEwLTYuNi0xNi02LjZjLTYuMSwwLTExLjgsMi40LTE2LDYuNmMtMi4xLDIuMS0zLjgsNC42LTQuOSw3LjNjLTMuNi04LjItMTEuNy0xNC0yMS4xLTE0Yy01LjIsMC0xMCwxLjgtMTMuOCw0Ljd2LTEzCgkJYzAtMC4yLTAuMi0wLjQtMC40LTAuNEg2Yy0wLjIsMC0wLjQsMC4yLTAuNCwwLjRWNTVjMCwxMi41LDEwLjIsMjIuNywyMi43LDIyLjdjOS40LDAsMTcuNS01LjcsMjAuOS0xMy45YzEuMSwyLjcsMi44LDUuMSw0LjksNy4zCgkJYzQuMyw0LjMsMTAsNi42LDE2LDYuNmM1LjksMCwxMS41LTIuMywxNS43LTYuNGMwLjItMC4yLDAuMi0wLjQsMC0wLjZMODAuMiw2NWMtMC4yLTAuMi0wLjQtMC4yLTAuNiwwYy0yLjYsMi40LTUuOSwzLjgtOS41LDMuOAoJCWMtMy43LDAtNy4yLTEuNC05LjgtNC4xYy0yLjYtMi42LTQuMS02LjEtNC4xLTkuOHMxLjQtNy4yLDQuMS05LjhjNC4zLTQuMywxMC44LTUuMiwxNS45LTIuNkw2NSw1My43QzY0LjksNTMuOSw2NC45LDU0LjIsNjUsNTQuMwoJCXogTTI4LjIsNjguOGMtNy42LDAtMTMuOC02LjItMTMuOC0xMy44czYuMi0xMy44LDEzLjgtMTMuOFM0Miw0Ny40LDQyLDU1QzQyLjEsNjIuNiwzNS45LDY4LjgsMjguMiw2OC44eiIvPgoJPHBhdGggY2xhc3M9InN0MCIgZD0iTTEzNy43LDQxLjFjMy4zLDAsNi41LDEuMiw5LDMuNGMwLjIsMC4yLDAuNCwwLjIsMC42LDBsMC4xLTAuMWMxLjEtMi40LDIuNi00LjcsNC4zLTYuNgoJCWMwLjItMC4yLDAuMS0wLjQsMC0wLjZjLTQtMy4xLTguOS00LjktMTQtNC45QzEyNS4yLDMyLjMsMTE1LDQyLjUsMTE1LDU1czEwLjIsMjIuNywyMi43LDIyLjdjNS4xLDAsMTAuMS0xLjgsMTQtNC45CgkJYzAuMi0wLjIsMC4yLTAuNCwwLTAuNmMtMS44LTItMy4yLTQuMi00LjMtNi42YzAsMCwwLTAuMS0wLjEtMC4xYy0wLjItMC4yLTAuNC0wLjItMC42LDBjLTIuNSwyLjItNS43LDMuNC05LDMuNAoJCWMtNy42LDAtMTMuOC02LjItMTMuOC0xMy44QzEyMy44LDQ3LjMsMTMwLDQxLjEsMTM3LjcsNDEuMXoiLz4KCTxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0yMjEuMSwzMi4yYy00LjQsMC04LjcsMS4zLTEyLjMsMy43Yy0zLjYtMi4zLTcuOC0zLjctMTIuMy0zLjdjLTQuNCwwLTguNiwxLjMtMTIuMywzLjdsMCwwCgkJYy0zLjUtMi4zLTcuOC0zLjYtMTIuMy0zLjZjLTEyLjUsMC0yMi43LDEwLjItMjIuNywyMi43czEwLjIsMjIuNywyMi43LDIyLjdzMjIuNy0xMC4yLDIyLjctMjIuN2MwLTQuNy0xLjQtOS0zLjgtMTIuNgoJCWMxLjgtMC44LDMuNy0xLjMsNS44LTEuM2M3LjYsMCwxMy44LDYuMiwxMy44LDEzLjh2MjEuNGMwLDAuMiwwLjIsMC40LDAuNCwwLjRoOGMwLjIsMCwwLjQtMC4yLDAuNC0wLjRWNTQuOQoJCWMwLTQuNi0xLjQtOC45LTMuOC0xMi41YzEuOC0wLjgsMy44LTEuMyw1LjgtMS4zYzcuNiwwLDEzLjgsNi4yLDEzLjgsMTMuOHYyMS40YzAsMC4yLDAuMiwwLjQsMC40LDAuNGg4YzAuMiwwLDAuNC0wLjIsMC40LTAuNAoJCVY1NC45QzI0My43LDQyLjQsMjMzLjUsMzIuMiwyMjEuMSwzMi4yeiBNMTcxLjgsNjguOGMtNy42LDAtMTMuOC02LjItMTMuOC0xMy44czYuMi0xMy44LDEzLjgtMTMuOHMxMy44LDYuMiwxMy44LDEzLjgKCQlTMTc5LjQsNjguOCwxNzEuOCw2OC44eiIvPgo8L2c+Cjwvc3ZnPgo=">
           </a>
           <!-- End - logo -->
 
@@ -135,191 +135,222 @@
     <div class="layout__footer__inner">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-4">
+          <div class="col-xs-12 col-sm-4 col-md-3">
 
-            {% if page.footer__contact_information %}
-              <!-- Begin - contact information -->
-              <div class="layout__footer__contact-information">
-                {{ page.footer__contact_information }}
-              </div>
-              <!-- End - contact information -->
-            {% endif %}
-
-          </div>
-          <div class="col-xs-12 col-sm-4">
-
-            {% if page.footer__navigation %}
-              <!-- Begin - navigation -->
-              <div class="layout__footer__navigation">
-                {{ page.footer__navigation }}
-              </div>
-              <!-- End - navigation -->
-            {% endif %}
-
-          </div>
-          <div class="col-xs-12 col-sm-4">
-
-            <!-- Begin - social icons -->
-            <div class="layout__footer__social-icons">
-
+            <!-- Begin - contact information -->
+            <div class="layout__footer__contact-information">
               <div class="partial">
-                <div class="partial__heading">
-                  <h2
-                    class="partial__heading__title">{{ 'Social icons' | t }}</h2>
-                </div>
                 <div class="partial__body">
-                  <ul class="list-unstyled">
 
-                    {% if theme_settings.social.facebook.active %}
-                      <li>
+                  <!-- Begin - logo -->
+                  <div class="layout__footer__logo">
+                    <img src="{{ base_path ~ directory }}/dist/images/logo.svg">
+                  </div>
+                  <!-- End - logo -->
+
+                  <!-- Begin - contact information -->
+                  <div class="layout__footer__contact-information">
+
+                    {% if theme_settings.contact_information.email %}
+                      <div class="layout__footer__contact-information__item layout__footer__contact-information__item--email">
                         <a
-                          href="{{ theme_settings.social.facebook.url }}"
-                          target="_blank"
-                          data-toggle="tooltip"
-                          data-placement="top"
-                          title="{{ theme_settings.social.facebook.tooltip }}">
-                      <span class="social-icon social-icon--facebook">
-                        <span class="icon fa fa-facebook-f"></span>
-                      </span>
-                          Facebook
+                          href="mailto: {{ theme_settings.contact_information.email }}">
+                          {{ theme_settings.contact_information.email }}
                         </a>
-                      </li>
+                      </div>
                     {% endif %}
 
-                    {% if theme_settings.social.twitter.active %}
-                      <li>
-                        <a
-                          href="{{ theme_settings.social.twitter.url }}"
-                          target="_blank"
-                          data-toggle="tooltip"
-                          data-placement="top"
-                          title="{{ theme_settings.social.twitter.tooltip }}">
-                      <span class="social-icon social-icon--twitter">
-                        <span class="icon fa fa-twitter"></span>
-                      </span>
-                          Twitter
-                        </a>
-                      </li>
+                    {% if theme_settings.contact_information.address %}
+                      <div class="layout__footer__contact-information__item layout__footer__contact-information__item--address">
+                        {{ theme_settings.contact_information.address }}
+                      </div>
                     {% endif %}
 
-                    {% if theme_settings.social.googleplus.active %}
-                      <li>
-                        <a
-                          href="{{ theme_settings.social.googleplus.url }}"
-                          target="_blank"
-                          data-toggle="tooltip"
-                          data-placement="top"
-                          title="{{ theme_settings.social.googleplus.tooltip }}">
-                      <span class="social-icon social-icon--google-plus">
-                        <span class="icon fa fa-google-plus"></span>
-                      </span>
-                          Google+
-                        </a>
-                      </li>
+                    {% if theme_settings.contact_information.zipcode and theme_settings.contact_information.city %}
+                      <div class="layout__footer__contact-information__item layout__footer__contact-information__item--city-and-zip">
+                        {{ theme_settings.contact_information.zipcode }} {{ theme_settings.contact_information.city }}
+                      </div>
                     {% endif %}
 
-                    {% if theme_settings.social.linkedin.active %}
-                      <li>
+                    {% if theme_settings.contact_information.phone_system and theme_settings.contact_information.phone_readable %}
+                      <div class="layout__footer__contact-information__item layout__footer__contact-information__item--phone">
                         <a
-                          href="{{ theme_settings.social.linkedin.url }}"
-                          target="_blank"
-                          data-toggle="tooltip"
-                          data-placement="top"
-                          title="{{ theme_settings.social.linkedin.tooltip }}">
-                      <span class="social-icon social-icon--linkedin">
-                        <span class="icon fa fa-linkedin"></span>
-                      </span>
-                          LinkedIn
+                          href="tel:{{ theme_settings.contact_information.phone_system }}">Tlf.: {{ theme_settings.contact_information.phone_readable }}
                         </a>
-                      </li>
+                      </div>
                     {% endif %}
 
-                    {% if theme_settings.social.pinterest.active %}
-                      <li>
-                        <a
-                          href="{{ theme_settings.social.pinterest.url }}"
-                          target="_blank"
-                          data-toggle="tooltip"
-                          data-placement="top"
-                          title="{{ theme_settings.social.pinterest.tooltip }}">
-                      <span class="social-icon social-icon--pinterest">
-                        <span class="icon fa fa-pinterest"></span>
-                      </span>
-                          Pinterest
-                        </a>
-                      </li>
+                    {% if theme_settings.contact_information.working_hours %}
+                      <div class="layout__footer__contact-information__item layout__footer__contact-information__item--working-hours">
+                        {{ theme_settings.contact_information.working_hours }}
+                      </div>
                     {% endif %}
 
-                    {% if theme_settings.social.instagram.active %}
-                      <li>
-                        <a
-                          href="{{ theme_settings.social.instagram.url }}"
-                          target="_blank"
-                          data-toggle="tooltip"
-                          data-placement="top"
-                          title="{{ theme_settings.social.instagram.tooltip }}">
-                      <span class="social-icon social-icon--instagram">
-                        <span class="icon fa fa-instagram"></span>
-                      </span>
-                          Instagram
-                        </a>
-                      </li>
-                    {% endif %}
+                  </div>
+                  <!-- End - contact information -->
 
-                    {% if theme_settings.social.youtube.active %}
-                      <li>
-                        <a
-                          href="{{ theme_settings.social.youtube.url }}"
-                          target="_blank"
-                          data-toggle="tooltip"
-                          data-placement="top"
-                          title="{{ theme_settings.social.youtube.tooltip }}">
-                      <span class="social-icon social-icon--youtube">
-                        <span class="icon fa fa-youtube"></span>
-                      </span>
-                          Youtube
-                        </a>
-                      </li>
-                    {% endif %}
+                  <!-- Begin - social icons -->
+                  <nav class="layout__footer__social-icons"
+                       role="navigation">
+                    <ul class="list-inline">
 
-                    {% if theme_settings.social.vimeo.active %}
-                      <li>
-                        <a
-                          href="{{ theme_settings.social.vimeo.url }}"
-                          target="_blank"
-                          data-toggle="tooltip"
-                          data-placement="top"
-                          title="{{ theme_settings.social.vimeo.tooltip }}">
-                      <span class="social-icon social-icon--vimeo">
-                        <span class="icon fa fa-vimeo"></span>
-                      </span>
-                          Vimeo
-                        </a>
-                      </li>
-                    {% endif %}
+                      {% if theme_settings.social.facebook.active %}
+                        <li>
+                          <a
+                            href="{{ theme_settings.social.facebook.url }}"
+                            target="_blank"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            class="social-icon social-icon--facebook"
+                            title="{{ theme_settings.social.facebook.tooltip }}">
+                            <span class="icon fa fa-facebook-f"></span>
+                          </a>
+                        </li>
+                      {% endif %}
 
-                    {% if theme_settings.social.github.active %}
-                      <li>
-                        <a
-                          href="{{ theme_settings.social.github.url }}"
-                          target="_blank"
-                          data-toggle="tooltip"
-                          data-placement="top"
-                          title="{{ theme_settings.social.github.tooltip }}">
-                      <span class="social-icon social-icon--github">
-                        <span class="icon fa fa-github"></span>
-                      </span>
-                          Github
-                        </a>
-                      </li>
-                    {% endif %}
+                      {% if theme_settings.social.twitter.active %}
+                        <li>
+                          <a
+                            href="{{ theme_settings.social.twitter.url }}"
+                            target="_blank"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            class="social-icon social-icon--twitter"
+                            title="{{ theme_settings.social.twitter.tooltip }}">
+                            <span class="icon fa fa-twitter"></span>
+                          </a>
+                        </li>
+                      {% endif %}
 
-                  </ul>
+                      {% if theme_settings.social.googleplus.active %}
+                        <li>
+                          <a
+                            href="{{ theme_settings.social.googleplus.url }}"
+                            target="_blank"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            class="social-icon social-icon--google-plus"
+                            title="{{ theme_settings.social.googleplus.tooltip }}">
+                            <span class="icon fa fa-google-plus"></span>
+                          </a>
+                        </li>
+                      {% endif %}
+
+                      {% if theme_settings.social.linkedin.active %}
+                        <li>
+                          <a
+                            href="{{ theme_settings.social.linkedin.url }}"
+                            target="_blank"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            class="social-icon social-icon--linkedin"
+                            title="{{ theme_settings.social.linkedin.tooltip }}">
+                            <span class="icon fa fa-linkedin"></span>
+                          </a>
+                        </li>
+                      {% endif %}
+
+                      {% if theme_settings.social.pinterest.active %}
+                        <li>
+                          <a
+                            href="{{ theme_settings.social.pinterest.url }}"
+                            target="_blank"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            class="social-icon social-icon--pinterest"
+                            title="{{ theme_settings.social.pinterest.tooltip }}">
+                            <span class="icon fa fa-pinterest"></span>
+                          </a>
+                        </li>
+                      {% endif %}
+
+                      {% if theme_settings.social.instagram.active %}
+                        <li>
+                          <a
+                            href="{{ theme_settings.social.instagram.url }}"
+                            target="_blank"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            class="social-icon social-icon--instagram"
+                            title="{{ theme_settings.social.instagram.tooltip }}">
+                            <span class="icon fa fa-instagram"></span>
+                          </a>
+                        </li>
+                      {% endif %}
+
+                      {% if theme_settings.social.youtube.active %}
+                        <li>
+                          <a
+                            href="{{ theme_settings.social.youtube.url }}"
+                            target="_blank"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            class="social-icon social-icon--youtube"
+                            title="{{ theme_settings.social.youtube.tooltip }}">
+                            <span class="icon fa fa-youtube"></span>
+                          </a>
+                        </li>
+                      {% endif %}
+
+                      {% if theme_settings.social.vimeo.active %}
+                        <li>
+                          <a
+                            href="{{ theme_settings.social.vimeo.url }}"
+                            target="_blank"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            class="social-icon social-icon--vimeo"
+                            title="{{ theme_settings.social.vimeo.tooltip }}">
+                            <span class="icon fa fa-vimeo"></span>
+                          </a>
+                        </li>
+                      {% endif %}
+
+                      {% if theme_settings.social.github.active %}
+                        <li>
+                          <a
+                            href="{{ theme_settings.social.github.url }}"
+                            target="_blank"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            class="social-icon social-icon--github"
+                            title="{{ theme_settings.social.github.tooltip }}">
+                            <span class="icon fa fa-github"></span>
+                          </a>
+                        </li>
+                      {% endif %}
+
+                    </ul>
+                  </nav>
+                  <!-- End - social icons -->
+
                 </div>
               </div>
 
             </div>
-            <!-- End - social icons -->
+            <!-- End - contact information -->
+
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-3 hidden-xs">
+
+            {% if page.footer__menu__first %}
+              <!-- Begin - menu (first) -->
+              <div class="layout__footer__menu layout__footer__menu--first">
+                {{ page.footer__menu__first }}
+              </div>
+              <!-- End - menu (first) -->
+            {% endif %}
+
+          </div>
+          <div class="col-xs-12 col-sm-4 col-md-3 hidden-xs">
+
+            {% if page.footer__menu__second %}
+              <!-- Begin - menu (second) -->
+              <div class="layout__footer__menu layout__footer__menu--second">
+                {{ page.footer__menu__second }}
+              </div>
+              <!-- End - menu (second) -->
+            {% endif %}
 
           </div>
         </div>

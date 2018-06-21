@@ -1,0 +1,21 @@
+uuid: fc78405f-9afd-43b6-ac06-d8b941ff493d
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subheading
+    - paragraphs.paragraphs_type.list_of_employees
+  module:
+    - text
+id: paragraph.list_of_employees.field_subheading
+field_name: field_subheading
+entity_type: paragraph
+bundle: list_of_employees
+label: Underrubrik
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

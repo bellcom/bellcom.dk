@@ -1,0 +1,53 @@
+{%
+  set classes = [
+  node.bundle|clean_class,
+  node.isPromoted() ? 'is-promoted',
+  node.isSticky() ? 'is-sticky',
+  not node.isPublished() ? 'is-unpublished',
+  view_mode ? view_mode|clean_class,
+  'element-wrapper-link',
+]
+%}
+<article{{ attributes.addClass(classes) }} style="background-image: url({{ node.field_image.entity.fileuri | image_style(content.field_image[0]['#image_style']) }});">
+  <div class="entity-{{ view_mode|clean_class }}__inner">
+
+    <div class="entity-{{ view_mode|clean_class }}__overlay"></div>
+
+    <div class="entity-{{ view_mode|clean_class }}__content">
+
+      <div class="entity-{{ view_mode|clean_class }}__heading">
+        <h3 class="entity-{{ view_mode|clean_class }}__heading__title heading-h5">
+          {{ label }}
+        </h3>
+      </div>
+
+      <div class="entity-{{ view_mode|clean_class }}__body">
+
+        {# Begin - job title #}
+        {% if node.field_job_title.value %}
+          <div class="entity-{{ view_mode|clean_class }}__job-title">
+            {{ content.field_job_title }}
+          </div>
+        {% endif %}
+        {# End - job title #}
+
+        {# Begin - phone #}
+        {% if node.field_phone_readable.value and node.field_phone_system.value %}
+          <div class="entity-{{ view_mode|clean_class }}__phone">
+            <a href="tel:{{ node.field_phone_system.value }}">{{ node.field_phone_readable.value }}</a>
+          </div>
+        {% endif %}
+        {# End - phone #}
+
+        {# Begin - email #}
+        {% if node.field_email.value %}
+          <div class="entity-{{ view_mode|clean_class }}__email">
+            {{ content.field_email }}
+          </div>
+        {% endif %}
+        {# End - email #}
+
+      </div>
+    </div>
+  </div>
+</article>

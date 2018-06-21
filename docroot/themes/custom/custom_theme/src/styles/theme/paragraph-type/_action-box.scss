@@ -1,0 +1,97 @@
+// |--------------------------------------------------------------------------
+// | Paragraph
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .paragraph--type--action-box
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+@mixin paragraph-mixin() {}
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+.paragraph--type--action-box {
+
+  .paragraph__content {
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@media #{$breakpoint-mobile-and-up} {}
+
+// Mobile - only
+@media #{$breakpoint-mobile-only} {
+
+  .paragraph--type--action-box {
+
+    .paragraph__content__inner {
+
+      + .paragraph__link {
+        margin-top: $grid-gutter-width;
+      }
+    }
+  }
+}
+
+// Tablet - and up
+@media #{$breakpoint-tablet-and-up} {
+
+  .paragraph--type--action-box {
+
+    .paragraph__content {
+      flex-direction: row;
+
+      justify-content: center;
+    }
+
+    .paragraph__content__inner {
+
+      + .paragraph__link {
+        margin-left: $grid-gutter-width;
+      }
+    }
+  }
+}
+
+// Tablet - only
+@media #{$breakpoint-tablet-only} {}
+
+// Desktop - and up
+@media #{$breakpoint-desktop-and-up} {}
+
+// Desktop - only
+@media #{$breakpoint-desktop-only} {}
+
+// Large desktop - and up
+@media #{$breakpoint-large-desktop-and-up} {}
+
+// Print
+@media print {}
+
+// Touch
+.touchevents {}
+
+// No touch
+.no-touchevents {}

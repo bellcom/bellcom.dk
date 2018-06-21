@@ -1,0 +1,21 @@
+uuid: 775e2193-d291-4183-a1fc-fdff1d77dfb1
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.list_of_employees
+  module:
+    - text
+id: paragraph.list_of_employees.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: list_of_employees
+label: Brødtekst
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

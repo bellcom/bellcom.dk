@@ -7,28 +7,31 @@ dependencies:
     - field.field.paragraph.action_box.field_background_image
     - field.field.paragraph.action_box.field_body
     - field.field.paragraph.action_box.field_heading
+    - field.field.paragraph.action_box.field_link
     - field.field.paragraph.action_box.field_text_color
     - image.style.paragraph_action_box
     - paragraphs.paragraphs_type.action_box
   module:
     - field_group
     - focal_point
+    - link
     - text
 third_party_settings:
   field_group:
     group_appearance:
       children:
         - field_text_color
-        - field_background_image
         - field_background_color
+        - field_background_image
       parent_name: ''
-      weight: 20
-      format_type: fieldset
+      weight: 3
+      format_type: details
       format_settings:
+        label: Udseende
+        required_fields: true
         id: ''
         classes: ''
-        description: ''
-        required_fields: true
+        open: false
       label: Udseende
 id: paragraph.action_box.default
 targetEntityType: paragraph
@@ -36,13 +39,13 @@ bundle: action_box
 mode: default
 content:
   field_background_color:
-    weight: 26
+    type: options_select
+    weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   field_background_image:
-    weight: 25
+    weight: 4
     settings:
       preview_image_style: paragraph_action_box
       progress_indicator: throbber
@@ -67,8 +70,16 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   field_text_color:
-    weight: 24
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_select

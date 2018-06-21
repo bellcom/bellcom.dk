@@ -10,6 +10,7 @@
 %}
 <article{{ attributes.addClass(classes) }}>
 
+  {% if node.field_heading.value or node.field_subheading.value or node.field_body.value %}
   <div class="entity-{{ view_mode|clean_class }}__header">
 
     {# Begin - heading #}
@@ -37,6 +38,7 @@
     {# End - body #}
 
   </div>
+  {% endif %}
 
   {# Begin - paragraphs #}
   {% if node.field_paragraphs.value %}

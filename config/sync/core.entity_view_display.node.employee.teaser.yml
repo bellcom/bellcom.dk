@@ -4,10 +4,16 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.employee.field_department
+    - field.field.node.employee.field_email
+    - field.field.node.employee.field_image
+    - field.field.node.employee.field_job_title
     - field.field.node.employee.field_phone_readable
     - field.field.node.employee.field_phone_system
+    - image.style.employee_image
     - node.type.employee
   module:
+    - image
     - telephone
     - user
 id: node.employee.teaser
@@ -15,15 +21,31 @@ targetEntityType: node
 bundle: employee
 mode: teaser
 content:
-  field_phone_readable:
-    type: telephone_link
+  field_email:
+    type: basic_string
+    weight: 4
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_image:
+    type: image
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      image_style: employee_image
+      image_link: ''
+    third_party_settings: {  }
+  field_job_title:
+    type: entity_reference_label
     weight: 0
     region: content
     label: hidden
     settings:
-      title: ''
+      link: false
     third_party_settings: {  }
-  field_phone_system:
+  field_phone_readable:
     type: telephone_link
     weight: 1
     region: content
@@ -31,6 +53,15 @@ content:
     settings:
       title: ''
     third_party_settings: {  }
+  field_phone_system:
+    type: telephone_link
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
 hidden:
+  field_department: true
   langcode: true
   links: true

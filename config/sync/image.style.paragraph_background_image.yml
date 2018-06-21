@@ -1,0 +1,17 @@
+uuid: f82ca1aa-e9a4-4954-8db2-982737c02b4b
+langcode: da
+status: true
+dependencies:
+  module:
+    - focal_point
+name: paragraph_background_image
+label: 'Paragraph - background image'
+effects:
+  2095fdde-ed61-4fed-8cfd-c04ba67d6e11:
+    uuid: 2095fdde-ed61-4fed-8cfd-c04ba67d6e11
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 600
+      crop_type: focal_point

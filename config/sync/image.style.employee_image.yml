@@ -1,0 +1,17 @@
+uuid: 22373af1-57a8-4085-9b95-0d948b64ba4a
+langcode: da
+status: true
+dependencies:
+  module:
+    - focal_point
+name: employee_image
+label: 'Medarbejder - billede'
+effects:
+  989b88e0-b3a8-4a3b-afd9-8bad6780187b:
+    uuid: 989b88e0-b3a8-4a3b-afd9-8bad6780187b
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 300
+      crop_type: focal_point

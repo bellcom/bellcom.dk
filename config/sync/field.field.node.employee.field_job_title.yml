@@ -1,0 +1,29 @@
+uuid: aec5c63b-3398-4757-ab02-764f13dc1301
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_title
+    - node.type.employee
+    - taxonomy.vocabulary.job_titles
+id: node.employee.field_job_title
+field_name: field_job_title
+entity_type: node
+bundle: employee
+label: Jobtitel
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      job_titles: job_titles
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

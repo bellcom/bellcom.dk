@@ -1,0 +1,87 @@
+uuid: eab234f3-e34f-4cab-8de8-4471f15947bd
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.list_of_employees.field_background_color
+    - field.field.paragraph.list_of_employees.field_background_image
+    - field.field.paragraph.list_of_employees.field_body
+    - field.field.paragraph.list_of_employees.field_departments
+    - field.field.paragraph.list_of_employees.field_heading
+    - field.field.paragraph.list_of_employees.field_subheading
+    - image.style.paragraph_background_image
+    - paragraphs.paragraphs_type.list_of_employees
+  module:
+    - field_group
+    - focal_point
+    - text
+third_party_settings:
+  field_group:
+    group_appearance:
+      children:
+        - field_background_color
+        - field_background_image
+      parent_name: ''
+      weight: 4
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Udseende
+id: paragraph.list_of_employees.default
+targetEntityType: paragraph
+bundle: list_of_employees
+mode: default
+content:
+  field_background_color:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_background_image:
+    weight: 2
+    settings:
+      preview_image_style: paragraph_background_image
+      progress_indicator: throbber
+      preview_link: true
+      offsets: '50,50'
+    third_party_settings: {  }
+    type: image_focal_point
+    region: content
+  field_body:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_departments:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_heading:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_subheading:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

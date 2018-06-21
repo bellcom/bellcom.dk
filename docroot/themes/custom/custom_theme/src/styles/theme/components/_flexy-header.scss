@@ -24,6 +24,21 @@
   border-bottom: 1px solid $border-color;
 }
 
+.flexy-header__logo {
+
+  img {
+
+    path {
+      fill: $headings-color;
+    }
+  }
+}
+
+.flexy-header__sidebar-toggle {
+  border: 0;
+  background-color: transparent;
+}
+
 // --------------------------------------------------
 // Variants
 // --------------------------------------------------

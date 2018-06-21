@@ -16,8 +16,8 @@ regions:
   highlighted: 'Highlighted'
   help: 'Help'
   content: 'Content'
-  footer__contact_information: 'Footer - contact information'
-  footer__navigation: 'Footer - navigation'
+  footer__menu__first: 'Footer - menu (first)'
+  footer__menu__second: 'Footer - menu (second)'
 
 
 libraries:

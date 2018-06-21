@@ -7,7 +7,22 @@ dependencies:
     - field.field.paragraph.section.field_paragraphs
     - paragraphs.paragraphs_type.section
   module:
+    - field_group
     - paragraphs
+third_party_settings:
+  field_group:
+    group_appearance:
+      children:
+        - field_background_color
+      parent_name: ''
+      weight: 20
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Udseende
 id: paragraph.section.default
 targetEntityType: paragraph
 bundle: section
@@ -15,12 +30,9 @@ mode: default
 content:
   field_background_color:
     weight: 1
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_autocomplete
+    type: options_select
     region: content
   field_paragraphs:
     weight: 0

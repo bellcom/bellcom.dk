@@ -10,6 +10,11 @@
 // Variables
 // --------------------------------------------------
 
+$xs-footer-inner-spacing: 30px;
+$sm-footer-inner-spacing: 40px;
+$md-footer-inner-spacing: 50px;
+$lg-footer-inner-spacing: 60px;
+
 // --------------------------------------------------
 // Mixins
 // --------------------------------------------------
@@ -21,8 +26,129 @@
 // --------------------------------------------------
 
 .layout__footer {
+  padding: $xs-footer-inner-spacing 0;
+
   border-top: 3px solid $brand-primary;
+
   background-color: $body-bg-tertiary;
+
+  &,
+  a, a:hover {
+    color: #fff;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+// Logo
+.layout__footer__logo {
+  margin-top: -10px; // as the logo is badly cropped we need to do this to align
+
+  text-align: left;
+
+  img {
+    height: 50px;
+  }
+
+  + .layout__footer__contact-information {
+    margin-top: 5px;
+  }
+}
+
+// Contact information
+.layout__footer__contact-information {}
+
+.layout__footer__contact-information__item--email {
+
+  + .layout__footer__contact-information__item {
+    margin-top: 15px;
+  }
+}
+
+.layout__footer__contact-information__item--city-and-zip {
+
+  + .layout__footer__contact-information__item {
+    margin-top: 15px;
+  }
+}
+
+.layout__footer__contact-information__item--phone {
+
+  + .layout__footer__contact-information__item {
+    margin-top: 15px;
+  }
+}
+
+// Social icons
+.layout__footer__contact-information {
+
+  + .layout__footer__social-icons {
+    margin-top: 15px;
+  }
+}
+
+// Menu
+.layout__footer__menu {
+
+  .menu {
+
+    > li {
+
+      > a {
+        padding: 5px 0;
+
+        &:hover,
+        &:focus {
+          background-color: transparent;
+        }
+      }
+
+      &:first-child {
+
+        > a {
+          padding-top: 0;
+        }
+      }
+
+      &:last-child {
+
+        > a {
+          padding-bottom: 0;
+        }
+      }
+    }
+
+    // Bootstrap theme resets
+    &.navbar-nav {
+      float: none;
+
+      > li {
+        float: none;
+      }
+    }
+  }
+}
+
+// Block
+.layout__footer {
+
+  .region {
+
+    > nav {}
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: floor( ($grid-gutter-width / 2) );
+
+      font-size: $font-size-h4;
+    }
+  }
 }
 
 // --------------------------------------------------
@@ -43,16 +169,31 @@
 @media #{$breakpoint-tablet-and-up} {}
 
 // Tablet - only
-@media #{$breakpoint-tablet-only} {}
+@media #{$breakpoint-tablet-only} {
+
+  .layout__footer {
+    padding: $sm-footer-inner-spacing 0;
+  }
+}
 
 // Desktop - and up
 @media #{$breakpoint-desktop-and-up} {}
 
 // Desktop - only
-@media #{$breakpoint-desktop-only} {}
+@media #{$breakpoint-desktop-only} {
+
+  .layout__footer {
+    padding: $md-footer-inner-spacing 0;
+  }
+}
 
 // Large desktop - and up
-@media #{$breakpoint-large-desktop-and-up} {}
+@media #{$breakpoint-large-desktop-and-up} {
+
+  .layout__footer {
+    padding: $lg-footer-inner-spacing 0;
+  }
+}
 
 // Print
 @media print {}

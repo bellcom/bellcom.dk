@@ -11,30 +11,33 @@
     {% block content %}
 
       <div class="paragraph__content">
+        <div class="paragraph__content__inner">
 
-        {# Begin - heading #}
-        {% if paragraph.field_heading.value %}
-          <div class="paragraph__heading">
-            {{ content.field_heading }}
+          {# Begin - heading #}
+          {% if paragraph.field_heading.value %}
+            <div class="paragraph__heading">
+              {{ content.field_heading }}
+            </div>
+          {% endif %}
+          {# End - heading #}
+
+          {# Begin - body #}
+          {% if paragraph.field_body.value %}
+            <div class="paragraph__body">
+              {{ content.field_body }}
+            </div>
+          {% endif %}
+          {# End - body #}
+
+        </div>
+
+        {# Begin - link #}
+        {% if paragraph.field_link.value %}
+          <div class="paragraph__link">
+            {{ content.field_link }}
           </div>
         {% endif %}
-        {# End - heading #}
-
-        {# Begin - subheading #}
-        {% if paragraph.field_subheading.value %}
-          <div class="paragraph__subheading">
-            {{ content.field_subheading }}
-          </div>
-        {% endif %}
-        {# End - subheading #}
-
-        {# Begin - body #}
-        {% if paragraph.field_body.value %}
-          <div class="paragraph__body">
-            {{ content.field_body }}
-          </div>
-        {% endif %}
-        {# End - body #}
+        {# End - link #}
 
       </div>
 

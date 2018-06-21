@@ -3,6 +3,8 @@ langcode: da
 status: true
 dependencies:
   config:
+    - field.field.paragraph.media.field_background_color
+    - field.field.paragraph.media.field_background_image
     - field.field.paragraph.media.field_body
     - field.field.paragraph.media.field_heading
     - field.field.paragraph.media.field_media
@@ -19,6 +21,15 @@ targetEntityType: paragraph
 bundle: media
 mode: default
 content:
+  field_background_image:
+    weight: 4
+    label: hidden
+    settings:
+      image_style: paragraph_background_image
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
   field_body:
     weight: 2
     label: hidden
@@ -51,5 +62,6 @@ content:
     type: text_default
     region: content
 hidden:
+  field_background_color: true
   field_position_of_media: true
   field_video_url: true

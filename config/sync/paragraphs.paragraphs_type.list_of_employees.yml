@@ -1,0 +1,14 @@
+uuid: 2beed896-98ee-4fcb-bf1f-70223800e801
+langcode: da
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: list_of_employees
+label: 'Liste af medarbejdere'
+icon_uuid: null
+description: 'Viser en liste over medarbejdere.'
+behavior_plugins: {  }

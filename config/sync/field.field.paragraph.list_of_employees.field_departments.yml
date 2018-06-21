@@ -1,0 +1,29 @@
+uuid: 0ccca112-6a2f-4573-990c-11a2de38abf2
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_departments
+    - paragraphs.paragraphs_type.list_of_employees
+    - taxonomy.vocabulary.departments
+id: paragraph.list_of_employees.field_departments
+field_name: field_departments
+entity_type: paragraph
+bundle: list_of_employees
+label: Afdelinger
+description: 'Hvis ingen afdeling vælges, vises medarbejdere fra alle afdelinger.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      departments: departments
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

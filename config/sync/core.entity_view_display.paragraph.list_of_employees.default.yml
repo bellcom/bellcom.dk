@@ -1,0 +1,55 @@
+uuid: 6ae3dbd7-17fd-4927-9d19-0bbcbc1ed7f9
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.list_of_employees.field_background_color
+    - field.field.paragraph.list_of_employees.field_background_image
+    - field.field.paragraph.list_of_employees.field_body
+    - field.field.paragraph.list_of_employees.field_departments
+    - field.field.paragraph.list_of_employees.field_heading
+    - field.field.paragraph.list_of_employees.field_subheading
+    - image.style.paragraph_background_image
+    - paragraphs.paragraphs_type.list_of_employees
+  module:
+    - image
+    - text
+id: paragraph.list_of_employees.default
+targetEntityType: paragraph
+bundle: list_of_employees
+mode: default
+content:
+  field_background_image:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: paragraph_background_image
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_body:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_subheading:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  field_background_color: true
+  field_departments: true

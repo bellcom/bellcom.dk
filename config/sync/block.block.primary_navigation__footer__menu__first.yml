@@ -1,0 +1,24 @@
+uuid: cdada3aa-39ee-4b4a-adc8-5b0a8570cc39
+langcode: da
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - custom_theme
+id: primary_navigation__footer__menu__first
+theme: custom_theme
+region: footer__menu__first
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: Menu
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

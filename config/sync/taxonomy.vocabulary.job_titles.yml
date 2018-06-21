@@ -1,0 +1,9 @@
+uuid: 74f6da5c-3c2e-425a-b8a0-0313b13ec651
+langcode: da
+status: true
+dependencies: {  }
+name: Jobtitler
+vid: job_titles
+description: 'Liste over stillingsbetegnelser for brug med medarbejdere. Bruges også til vægtning af medarbejderliste-visninger.'
+hierarchy: 0
+weight: 0

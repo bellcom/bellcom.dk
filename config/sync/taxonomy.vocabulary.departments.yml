@@ -4,6 +4,6 @@ status: true
 dependencies: {  }
 name: Afdelinger
 vid: departments
-description: ''
+description: 'Liste over afdelinger. Bruges bl.a. til angivelse af medarbejderes tilhørsforhold.'
 hierarchy: 0
 weight: 0

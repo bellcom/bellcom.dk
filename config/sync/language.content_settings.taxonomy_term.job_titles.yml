@@ -1,0 +1,11 @@
+uuid: 93ee19e4-ed65-4ae6-ac95-3f062ea88fe7
+langcode: da
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.job_titles
+id: taxonomy_term.job_titles
+target_entity_type_id: taxonomy_term
+target_bundle: job_titles
+default_langcode: site_default
+language_alterable: false

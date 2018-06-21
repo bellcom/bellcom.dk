@@ -1,4 +1,4 @@
-uuid: 0b45d8c9-0eea-44ad-bc19-bd11dd1a636e
+uuid: fe39a9f8-f6f1-47ea-b294-5abdc2fdb86e
 langcode: da
 status: true
 dependencies:
@@ -10,11 +10,9 @@ third_party_settings:
       - main
       - footer
     parent: 'main:'
-_core:
-  default_config_hash: KuyA4NHPXcmKAjRtwa0vQc2ZcyrUJy6IlS2TAyMNRbc
-name: Side
-type: page
-description: 'Brug <em>sider</em> til dit statiske indhold, som f.eks. en "om os"-side.'
+name: 'Blog indlæg'
+type: blog_post
+description: ''
 help: ''
 new_revision: false
 preview_mode: 0

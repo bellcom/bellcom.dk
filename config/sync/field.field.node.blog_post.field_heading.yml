@@ -1,0 +1,19 @@
+uuid: 926018cf-e4b4-4881-ac69-189a31e86597
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_heading
+    - node.type.blog_post
+id: node.blog_post.field_heading
+field_name: field_heading
+entity_type: node
+bundle: blog_post
+label: Overskrift
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

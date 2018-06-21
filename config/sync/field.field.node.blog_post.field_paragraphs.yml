@@ -1,0 +1,46 @@
+uuid: 36554029-e363-4fea-a1dd-6240a988e674
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.blog_post
+    - paragraphs.paragraphs_type.section
+  module:
+    - entity_reference_revisions
+id: node.blog_post.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: blog_post
+label: Afsnit
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      section: section
+    target_bundles_drag_drop:
+      action_box:
+        weight: 7
+        enabled: false
+      from_library:
+        weight: 8
+        enabled: false
+      list_of_employees:
+        weight: 9
+        enabled: false
+      media:
+        weight: 10
+        enabled: false
+      section:
+        enabled: true
+        weight: 11
+      text:
+        weight: 12
+        enabled: false
+field_type: entity_reference_revisions

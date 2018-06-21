@@ -1,0 +1,10 @@
+uuid: 3705aa07-0fed-4d3c-8d6e-f060125930b9
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: node.list_advanced
+label: 'Listevisning - avanceret'
+targetEntityType: node
+cache: true

@@ -1,0 +1,21 @@
+uuid: 07caa85b-fdd0-42c4-b7e9-67a73078cad6
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subheading
+    - node.type.blog_post
+  module:
+    - text
+id: node.blog_post.field_subheading
+field_name: field_subheading
+entity_type: node
+bundle: blog_post
+label: Underrubrik
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

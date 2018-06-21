@@ -26,6 +26,15 @@ $lg-layout-content-padding-bottom: $grid-gutter-width;
 // Styling
 // --------------------------------------------------
 
+html,
+body {
+  overflow-x: initial;
+}
+
+body {
+  margin-top: 0 !important;
+}
+
 .layout__content {
   padding-bottom: $xs-layout-content-padding-bottom;
 }

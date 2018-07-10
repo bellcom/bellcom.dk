@@ -5,6 +5,7 @@
         "cweagans/composer-patches": "^1.6.0",
         "drupal/admin_toolbar": "^1.24",
         "drupal/bootstrap": "^3.11",
+        "drupal/conditional_fields": "1.x-dev",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.5",
         "drupal/devel": "^1.2",

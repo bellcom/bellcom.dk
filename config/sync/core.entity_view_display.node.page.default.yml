@@ -3,6 +3,10 @@ langcode: da
 status: true
 dependencies:
   config:
+    - field.field.node.page.field_banner_background_image
+    - field.field.node.page.field_banner_body
+    - field.field.node.page.field_banner_heading
+    - field.field.node.page.field_banner_type
     - field.field.node.page.field_body
     - field.field.node.page.field_heading
     - field.field.node.page.field_paragraphs
@@ -51,5 +55,9 @@ content:
     type: text_default
     region: content
 hidden:
+  field_banner_background_image: true
+  field_banner_body: true
+  field_banner_heading: true
+  field_banner_type: true
   langcode: true
   links: true

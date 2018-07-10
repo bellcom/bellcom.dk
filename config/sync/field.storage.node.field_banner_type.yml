@@ -1,0 +1,27 @@
+uuid: de50f8be-60f1-4951-8e47-51d6b5711fd1
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_banner_type
+field_name: field_banner_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: large
+      label: Stor
+    -
+      value: small
+      label: Lille
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

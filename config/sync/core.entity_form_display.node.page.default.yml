@@ -3,15 +3,39 @@ langcode: da
 status: true
 dependencies:
   config:
+    - field.field.node.page.field_banner_background_image
+    - field.field.node.page.field_banner_body
+    - field.field.node.page.field_banner_heading
+    - field.field.node.page.field_banner_type
     - field.field.node.page.field_body
     - field.field.node.page.field_heading
     - field.field.node.page.field_paragraphs
     - field.field.node.page.field_subheading
+    - image.style.thumbnail
     - node.type.page
   module:
+    - field_group
+    - focal_point
     - paragraphs
     - path
     - text
+third_party_settings:
+  field_group:
+    group_banner:
+      children:
+        - field_banner_type
+        - field_banner_heading
+        - field_banner_body
+        - field_banner_background_image
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Banner
 _core:
   default_config_hash: sb0qCkzU_8mNq29NehYAU8jCBXWPLeX0UN8sYFVGVcw
 id: node.page.default
@@ -21,12 +45,44 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 7
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_banner_background_image:
+    weight: 10
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+      preview_link: true
+      offsets: '50,50'
+    third_party_settings: {  }
+    type: image_focal_point
+    region: content
+  field_banner_body:
+    weight: 9
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_banner_heading:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_banner_type:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_body:
-    weight: 3
+    weight: 5
     settings:
       rows: 5
       placeholder: ''
@@ -34,7 +90,7 @@ content:
     type: text_textarea
     region: content
   field_heading:
-    weight: 1
+    weight: 2
     settings:
       size: 60
       placeholder: ''
@@ -43,7 +99,7 @@ content:
     region: content
   field_paragraphs:
     type: paragraphs
-    weight: 4
+    weight: 6
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -60,7 +116,7 @@ content:
     third_party_settings: {  }
     region: content
   field_subheading:
-    weight: 2
+    weight: 3
     settings:
       rows: 5
       placeholder: ''
@@ -69,14 +125,14 @@ content:
     region: content
   langcode:
     type: language_select
-    weight: 5
+    weight: 7
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 10
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -84,21 +140,21 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 10
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 13
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 9
+    weight: 11
     region: content
     third_party_settings: {  }
   title:
@@ -111,7 +167,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 6
+    weight: 8
     region: content
     settings:
       match_operator: CONTAINS

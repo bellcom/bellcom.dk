@@ -1,0 +1,36 @@
+uuid: c6735807-afd7-4c2f-85fc-5cdb168ed85f
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.media.field_background_color
+    - field.field.paragraph.media.field_background_image
+    - field.field.paragraph.media.field_body
+    - field.field.paragraph.media.field_heading
+    - field.field.paragraph.media.field_media
+    - field.field.paragraph.media.field_position_of_media
+    - field.field.paragraph.media.field_subheading
+    - field.field.paragraph.media.field_video_url
+    - paragraphs.paragraphs_type.media
+id: paragraph.media.preview
+targetEntityType: paragraph
+bundle: media
+mode: preview
+content:
+  field_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_background_color: true
+  field_background_image: true
+  field_body: true
+  field_media: true
+  field_position_of_media: true
+  field_subheading: true
+  field_video_url: true

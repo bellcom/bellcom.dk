@@ -1,0 +1,24 @@
+uuid: 8e182e5d-8016-4ce3-a027-d98e01938c1d
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.section.field_background_color
+    - field.field.paragraph.section.field_paragraphs
+    - paragraphs.paragraphs_type.section
+id: paragraph.section.preview
+targetEntityType: paragraph
+bundle: section
+mode: preview
+content:
+  field_background_color:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+hidden:
+  field_paragraphs: true

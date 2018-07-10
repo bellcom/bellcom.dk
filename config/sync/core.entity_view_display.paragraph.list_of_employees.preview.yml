@@ -1,0 +1,32 @@
+uuid: 2faeca02-771a-4075-ae0d-f9faec75b9fe
+langcode: da
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.list_of_employees.field_background_color
+    - field.field.paragraph.list_of_employees.field_background_image
+    - field.field.paragraph.list_of_employees.field_body
+    - field.field.paragraph.list_of_employees.field_departments
+    - field.field.paragraph.list_of_employees.field_heading
+    - field.field.paragraph.list_of_employees.field_subheading
+    - paragraphs.paragraphs_type.list_of_employees
+id: paragraph.list_of_employees.preview
+targetEntityType: paragraph
+bundle: list_of_employees
+mode: preview
+content:
+  field_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_background_color: true
+  field_background_image: true
+  field_body: true
+  field_departments: true
+  field_subheading: true

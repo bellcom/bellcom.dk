@@ -11,7 +11,7 @@ dependencies:
     - field.field.node.page.field_heading
     - field.field.node.page.field_paragraphs
     - field.field.node.page.field_subheading
-    - image.style.thumbnail
+    - image.style.banner_background_image__small
     - node.type.page
   module:
     - field_group
@@ -52,8 +52,8 @@ content:
   field_banner_background_image:
     weight: 10
     settings:
+      preview_image_style: banner_background_image__small
       progress_indicator: throbber
-      preview_image_style: thumbnail
       preview_link: true
       offsets: '50,50'
     third_party_settings: {  }

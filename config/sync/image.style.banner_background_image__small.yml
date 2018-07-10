@@ -1,0 +1,17 @@
+uuid: b00a4140-e5eb-4010-8dd1-9d2581e4a6f4
+langcode: da
+status: true
+dependencies:
+  module:
+    - focal_point
+name: banner_background_image__small
+label: 'Banner - background image - small'
+effects:
+  9caaff96-a2c6-429f-a139-ea501efaf5cb:
+    uuid: 9caaff96-a2c6-429f-a139-ea501efaf5cb
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 2000
+      height: 500
+      crop_type: focal_point

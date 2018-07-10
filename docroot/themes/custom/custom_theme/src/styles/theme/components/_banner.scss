@@ -1,0 +1,77 @@
+// |--------------------------------------------------------------------------
+// | Banner
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .banner
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+@mixin banner-mixin() {}
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+.banner {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner__heading {}
+
+.banner__body {}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+.banner--small {
+  min-height: 400px;
+}
+
+.banner--large {
+  min-height: 1000px;
+}
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@media #{$breakpoint-mobile-and-up} {}
+
+// Mobile - only
+@media #{$breakpoint-mobile-only} {}
+
+// Tablet - and up
+@media #{$breakpoint-tablet-and-up} {}
+
+// Tablet - only
+@media #{$breakpoint-tablet-only} {}
+
+// Desktop - and up
+@media #{$breakpoint-desktop-and-up} {}
+
+// Desktop - only
+@media #{$breakpoint-desktop-only} {}
+
+// Large desktop - and up
+@media #{$breakpoint-large-desktop-and-up} {}
+
+// Print
+@media print {}
+
+// Touch
+.touchevents {}
+
+// No touch
+.no-touchevents {}

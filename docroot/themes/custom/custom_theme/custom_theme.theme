@@ -1,6 +1,58 @@
 <?php
 
+use Drupal\image\Entity\ImageStyle;
 use Drupal\taxonomy\Entity\Term;
+use Drupal\user\Entity\User;
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function custom_theme_preprocess_page(array &$variables) {
+  $banner_entity = null;
+  $banner = [];
+
+  // Node
+  if (isset($variables['node'])) {
+    $banner_entity = $variables['node'];
+  }
+
+  // User
+  elseif ($uid = \Drupal::routeMatch()->getRawParameter('user')) {
+    $banner_entity = User::load($uid);
+  }
+
+  // Taxonomy term
+  elseif ($tid = \Drupal::routeMatch()->getRawParameter('taxonomy_term')) {
+    $banner_entity = Term::load($tid);
+  }
+
+  if ($banner_entity != null) {
+
+    // Type
+    if ($field_types = $banner_entity->get('field_banner_type')->getValue()) {
+      $type = $variables['banner']['type'] = $field_types[0]['value'];
+
+      // Background image
+      if ($banner_entity->field_banner_background_image && !$banner_entity->field_banner_background_image->isEmpty()) {
+        $image_uri   = $banner_entity->field_banner_background_image->entity->getFileUri();
+        $image_style = ImageStyle::load('banner_background_image__' . $type);
+        $image_url   = $image_style->buildUrl($image_uri);
+
+        $variables['banner']['background_image'] = $image_url;
+      }
+    }
+
+    // Heading
+    if ($field_headings = $banner_entity->get('field_banner_heading')->getValue()) {
+      $variables['banner']['field_banner_heading'] = $field_headings[0]['value'];
+    }
+
+    // Body
+    if ($field_body = $banner_entity->get('field_banner_body')->getValue()) {
+      $variables['banner']['field_banner_body'] = $field_body[0]['value'];
+    }
+  }
+}
 
 /*
  * Implements hook_preprocess_paragraph().

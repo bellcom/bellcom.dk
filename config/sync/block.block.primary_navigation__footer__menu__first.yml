@@ -20,5 +20,5 @@ settings:
   provider: system
   label_display: visible
   level: 1
-  depth: 0
+  depth: 1
 visibility: {  }

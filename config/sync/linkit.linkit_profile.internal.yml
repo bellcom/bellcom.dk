@@ -1,0 +1,20 @@
+uuid: 90c7be02-9de2-4729-9b92-78f891d41d21
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+id: internal
+label: Intern
+description: ''
+attributes: {  }
+matchers:
+  25f23f23-9535-44f4-8a0b-e1675dcf10d2:
+    uuid: 25f23f23-9535-44f4-8a0b-e1675dcf10d2
+    id: 'entity:node'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles: {  }
+      group_by_bundle: false
+      include_unpublished: false

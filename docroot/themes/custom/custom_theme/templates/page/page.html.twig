@@ -102,25 +102,29 @@
 
     {# Begin - banner #}
     {% if banner %}
-      <div class="banner banner--{{ banner.type }}" style="background-image: url({{ banner.background_image }})">
-        <div class="container">
+      <div class="banner banner--{{ banner.type }} banner--text-color-{{ banner.text_color }}" style="background-image: url({{ banner.background_image }})">
+        <div class="banner__inner">
+          <div class="container">
 
-          {# Begin - heading #}
-          {% if banner.field_banner_heading %}
-            <div class="banner__heading">
-              {{ banner.field_banner_heading }}
-            </div>
-          {% endif %}
-          {# End - heading #}
+            {# Begin - heading #}
+            {% if banner.field_banner_heading %}
+              <div class="banner__heading">
+                <h2 class="banner__heading__title heading-h1">
+                  {{ banner.field_banner_heading }}
+                </h2>
+              </div>
+            {% endif %}
+            {# End - heading #}
 
-          {# Begin - body #}
-          {% if banner.field_banner_body %}
-            <div class="banner__body">
-              {{ banner.field_banner_body }}
-            </div>
-          {% endif %}
-          {# End - body #}
+            {# Begin - body #}
+            {% if banner.field_banner_body %}
+              <div class="banner__body">
+                {{ banner.field_banner_body }}
+              </div>
+            {% endif %}
+            {# End - body #}
 
+          </div>
         </div>
       </div>
     {% endif %}

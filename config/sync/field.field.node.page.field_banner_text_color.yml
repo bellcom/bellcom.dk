@@ -1,0 +1,23 @@
+uuid: 5d097fb3-ddf6-4bc1-a121-b6831cfadac1
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_banner_text_color
+    - node.type.page
+  module:
+    - options
+id: node.page.field_banner_text_color
+field_name: field_banner_text_color
+entity_type: node
+bundle: page
+label: 'Tekst farve'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: dark
+default_value_callback: ''
+settings: {  }
+field_type: list_string

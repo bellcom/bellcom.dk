@@ -10,6 +10,20 @@
 // Variables
 // --------------------------------------------------
 
+$banner-text-color-dark: $text-color-dark;
+$banner-text-color-light: #fff;
+
+// Responsive
+$xs-banner-large-min-height: 350px;
+$sm-banner-large-min-height: 600px;
+$md-banner-large-min-height: 800px;
+$lg-banner-large-min-height: 1000px;
+
+$xs-banner-small-min-height: 250px;
+$sm-banner-small-min-height: 300px;
+$md-banner-small-min-height: 400px;
+$lg-banner-small-min-height: 450px;
+
 // --------------------------------------------------
 // Mixins
 // --------------------------------------------------
@@ -21,25 +35,62 @@
 // --------------------------------------------------
 
 .banner {
+  display: flex;
+
+  flex-grow: 1;
+
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.banner__heading {}
+.banner__inner {
+  display: flex;
 
-.banner__body {}
+  flex-grow: 1;
+  align-items: center;
+}
+
+.banner__heading {
+  text-align: center;
+}
+
+.banner__heading__title {
+  color: $banner-text-color-dark;
+
+  .banner--text-color-dark & {
+    color: $banner-text-color-dark;
+  }
+
+  .banner--text-color-light & {
+    color: $banner-text-color-light;
+  }
+}
+
+.banner__body {
+  text-align: center;
+
+  color: $banner-text-color-dark;
+
+  .banner--text-color-dark & {
+    color: $banner-text-color-dark;
+  }
+
+  .banner--text-color-light & {
+    color: $banner-text-color-light;
+  }
+}
 
 // --------------------------------------------------
 // Variants
 // --------------------------------------------------
 
 .banner--small {
-  min-height: 400px;
+  min-height: $xs-banner-small-min-height;
 }
 
 .banner--large {
-  min-height: 1000px;
+  min-height: $xs-banner-large-min-height;
 }
 
 // --------------------------------------------------
@@ -56,16 +107,43 @@
 @media #{$breakpoint-tablet-and-up} {}
 
 // Tablet - only
-@media #{$breakpoint-tablet-only} {}
+@media #{$breakpoint-tablet-only} {
+
+  .banner--small {
+    min-height: $sm-banner-small-min-height;
+  }
+
+  .banner--large {
+    min-height: $sm-banner-large-min-height;
+  }
+}
 
 // Desktop - and up
 @media #{$breakpoint-desktop-and-up} {}
 
 // Desktop - only
-@media #{$breakpoint-desktop-only} {}
+@media #{$breakpoint-desktop-only} {
+
+  .banner--small {
+    min-height: $md-banner-small-min-height;
+  }
+
+  .banner--large {
+    min-height: $md-banner-large-min-height;
+  }
+}
 
 // Large desktop - and up
-@media #{$breakpoint-large-desktop-and-up} {}
+@media #{$breakpoint-large-desktop-and-up} {
+
+  .banner--small {
+    min-height: $lg-banner-small-min-height;
+  }
+
+  .banner--large {
+    min-height: $lg-banner-large-min-height;
+  }
+}
 
 // Print
 @media print {}

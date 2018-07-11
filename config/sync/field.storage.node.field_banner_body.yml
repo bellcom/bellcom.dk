@@ -1,16 +1,16 @@
-uuid: 703173a3-7cde-434a-8bfc-9b181b7dbb94
+uuid: 0aa2b85e-d9ce-43da-806c-8ad68c075dab
 langcode: da
 status: true
 dependencies:
   module:
     - node
-    - text
 id: node.field_banner_body
 field_name: field_banner_body
 entity_type: node
-type: text_long
-settings: {  }
-module: text
+type: string_long
+settings:
+  case_sensitive: false
+module: core
 locked: false
 cardinality: 1
 translatable: true

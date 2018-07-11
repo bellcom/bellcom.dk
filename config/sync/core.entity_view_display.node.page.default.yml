@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.page.field_banner_background_image
     - field.field.node.page.field_banner_body
     - field.field.node.page.field_banner_heading
+    - field.field.node.page.field_banner_text_color
     - field.field.node.page.field_banner_type
     - field.field.node.page.field_body
     - field.field.node.page.field_heading
@@ -23,6 +24,13 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
+  field_banner_body:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
   field_body:
     weight: 2
     label: hidden
@@ -56,8 +64,8 @@ content:
     region: content
 hidden:
   field_banner_background_image: true
-  field_banner_body: true
   field_banner_heading: true
+  field_banner_text_color: true
   field_banner_type: true
   langcode: true
   links: true

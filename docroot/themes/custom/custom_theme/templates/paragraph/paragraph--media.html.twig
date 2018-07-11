@@ -10,7 +10,7 @@
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
 
-      <div class="paragraph__media" style="background-image: url({{ paragraph.field_media.entity.fileuri | image_style(content.field_media[0]['#image_style']) }});"></div>
+      <div class="paragraph__media" {% if background_image %} style="background-image: url({{ background_image }});" {% endif %}></div>
 
       <div class="paragraph__content">
 

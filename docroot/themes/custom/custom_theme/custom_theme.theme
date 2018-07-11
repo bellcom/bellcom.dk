@@ -42,6 +42,11 @@ function custom_theme_preprocess_page(array &$variables) {
       }
     }
 
+    // Text color
+    if ($field_text_color = $banner_entity->get('field_banner_text_color')->getValue()) {
+      $variables['banner']['text_color'] = $field_text_color[0]['value'];
+    }
+
     // Heading
     if ($field_headings = $banner_entity->get('field_banner_heading')->getValue()) {
       $variables['banner']['field_banner_heading'] = $field_headings[0]['value'];
@@ -93,9 +98,17 @@ function custom_theme_preprocess_paragraph__media(&$variables) {
 
   if ($fields = $paragraph->get('field_position_of_media')->getValue()) {
 
-    if ($fields[0]['value'] === 'right') {
+    if (isset($fields[0]) && $fields[0]['value'] === 'right') {
       $variables['attributes']['class'][] = 'paragraph--reverse';
     }
+  }
+
+  if ($paragraph->field_media && !$paragraph->field_media->isEmpty()) {
+    $image_uri   = $paragraph->field_media->entity->getFileUri();
+    $image_style = ImageStyle::load('paragraph_media');
+    $image_url   = $image_style->buildUrl($image_uri);
+
+    $variables['background_image'] = $image_url;
   }
 }
 
@@ -107,7 +120,10 @@ function custom_theme_preprocess_paragraph__action_box(&$variables) {
   $paragraph = $variables['paragraph'];
 
   if ($fields = $paragraph->get('field_text_color')->getValue()) {
-    $variables['attributes']['class'][] = 'paragraph--text-color-' . $fields[0]['value'];
+
+    if (isset($fields[0]['value'])) {
+      $variables['attributes']['class'][] = 'paragraph--text-color-' . $fields[0]['value'];
+    }
   }
 }
 

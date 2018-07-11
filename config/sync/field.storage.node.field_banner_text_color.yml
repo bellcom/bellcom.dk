@@ -1,0 +1,27 @@
+uuid: be774943-20f3-4192-9cba-d69cf2b1a1de
+langcode: da
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_banner_text_color
+field_name: field_banner_text_color
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: dark
+      label: Mørk
+    -
+      value: light
+      label: Lys
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

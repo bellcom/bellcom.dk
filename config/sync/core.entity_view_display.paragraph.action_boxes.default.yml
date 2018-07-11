@@ -3,17 +3,22 @@ langcode: da
 status: true
 dependencies:
   config:
-    - field.field.paragraph.action_boxes.field_background_color
-    - field.field.paragraph.action_boxes.field_background_image
-    - field.field.paragraph.action_boxes.field_body
-    - field.field.paragraph.action_boxes.field_heading
-    - field.field.paragraph.action_boxes.field_link
-    - field.field.paragraph.action_boxes.field_text_color
-    - image.style.paragraph_action_boxes
+    - field.field.paragraph.action_boxes.field_box1_body
+    - field.field.paragraph.action_boxes.field_box1_heading
+    - field.field.paragraph.action_boxes.field_box1_icon
+    - field.field.paragraph.action_boxes.field_box1_subheading
+    - field.field.paragraph.action_boxes.field_box2_body
+    - field.field.paragraph.action_boxes.field_box2_heading
+    - field.field.paragraph.action_boxes.field_box2_icon
+    - field.field.paragraph.action_boxes.field_box2_subheading
+    - field.field.paragraph.action_boxes.field_box3_body
+    - field.field.paragraph.action_boxes.field_box3_heading
+    - field.field.paragraph.action_boxes.field_box3_icon
+    - field.field.paragraph.action_boxes.field_box3_subheading
+    - image.style.paragraph_action_box_icon
     - paragraphs.paragraphs_type.action_boxes
   module:
     - image
-    - link
     - text
 id: paragraph.action_boxes.default
 targetEntityType: paragraph
@@ -31,6 +36,99 @@ content:
     third_party_settings: {  }
   field_body:
     weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_box1_body:
+    weight: 7
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_box1_heading:
+    weight: 6
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_box1_icon:
+    weight: 5
+    label: hidden
+    settings:
+      image_style: paragraph_action_box_icon
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_box1_subheading:
+    weight: 8
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_box2_body:
+    weight: 15
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_box2_heading:
+    weight: 9
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_box2_icon:
+    weight: 11
+    label: hidden
+    settings:
+      image_style: paragraph_action_box_icon
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_box2_subheading:
+    weight: 13
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_box3_body:
+    weight: 16
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_box3_heading:
+    weight: 10
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_box3_icon:
+    weight: 12
+    label: hidden
+    settings:
+      image_style: paragraph_action_box_icon
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_box3_subheading:
+    weight: 14
     label: hidden
     settings: {  }
     third_party_settings: {  }
@@ -57,5 +155,4 @@ content:
     type: link
     region: content
 hidden:
-  field_background_color: true
   field_text_color: true

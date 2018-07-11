@@ -1,0 +1,19 @@
+uuid: 9a70c757-f798-406f-8819-8d2ccd0b61b8
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_box1_heading
+    - paragraphs.paragraphs_type.action_boxes
+id: paragraph.action_boxes.field_box1_heading
+field_name: field_box1_heading
+entity_type: paragraph
+bundle: action_boxes
+label: Overskrift
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

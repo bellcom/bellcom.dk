@@ -1,0 +1,21 @@
+uuid: 56417c13-d19f-4947-9dc0-9c5d82b23c0a
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_box3_subheading
+    - paragraphs.paragraphs_type.action_boxes
+  module:
+    - text
+id: paragraph.action_boxes.field_box3_subheading
+field_name: field_box3_subheading
+entity_type: paragraph
+bundle: action_boxes
+label: Underrubrik
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

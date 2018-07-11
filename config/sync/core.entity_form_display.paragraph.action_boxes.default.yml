@@ -3,26 +3,29 @@ langcode: da
 status: true
 dependencies:
   config:
-    - field.field.paragraph.action_boxes.field_background_color
-    - field.field.paragraph.action_boxes.field_background_image
-    - field.field.paragraph.action_boxes.field_body
-    - field.field.paragraph.action_boxes.field_heading
-    - field.field.paragraph.action_boxes.field_link
-    - field.field.paragraph.action_boxes.field_text_color
-    - image.style.paragraph_action_boxes
+    - field.field.paragraph.action_boxes.field_box1_body
+    - field.field.paragraph.action_boxes.field_box1_heading
+    - field.field.paragraph.action_boxes.field_box1_icon
+    - field.field.paragraph.action_boxes.field_box1_subheading
+    - field.field.paragraph.action_boxes.field_box2_body
+    - field.field.paragraph.action_boxes.field_box2_heading
+    - field.field.paragraph.action_boxes.field_box2_icon
+    - field.field.paragraph.action_boxes.field_box2_subheading
+    - field.field.paragraph.action_boxes.field_box3_body
+    - field.field.paragraph.action_boxes.field_box3_heading
+    - field.field.paragraph.action_boxes.field_box3_icon
+    - field.field.paragraph.action_boxes.field_box3_subheading
+    - image.style.thumbnail
     - paragraphs.paragraphs_type.action_boxes
   module:
     - field_group
-    - focal_point
-    - link
+    - image
     - text
 third_party_settings:
   field_group:
     group_appearance:
       children:
-        - field_text_color
         - field_background_color
-        - field_background_image
       parent_name: ''
       weight: 3
       format_type: details
@@ -33,17 +36,56 @@ third_party_settings:
         classes: ''
         open: false
       label: Udseende
+    group_box1:
+      children:
+        - field_box1_icon
+        - field_box1_heading
+        - field_box1_subheading
+        - field_box1_body
+      parent_name: ''
+      weight: 20
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Boks 1'
+    group_box2:
+      children:
+        - field_box2_icon
+        - field_box2_heading
+        - field_box2_subheading
+        - field_box2_body
+      parent_name: ''
+      weight: 20
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Boks 2'
+    group_box3:
+      children:
+        - field_box3_icon
+        - field_box3_heading
+        - field_box3_subheading
+        - field_box3_body
+      parent_name: ''
+      weight: 20
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Boks 3'
 id: paragraph.action_boxes.default
 targetEntityType: paragraph
 bundle: action_boxes
 mode: default
 content:
-  field_background_color:
-    type: options_select
-    weight: 3
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   field_background_image:
     weight: 4
     settings:
@@ -58,6 +100,102 @@ content:
     weight: 1
     settings:
       rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_box1_body:
+    weight: 9
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_box1_heading:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_box1_icon:
+    weight: 6
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_box1_subheading:
+    weight: 8
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_box2_body:
+    weight: 26
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_box2_heading:
+    weight: 24
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_box2_icon:
+    weight: 23
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_box2_subheading:
+    weight: 25
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_box3_body:
+    weight: 28
+    settings:
+      rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_box3_heading:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_box3_icon:
+    weight: 25
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_box3_subheading:
+    weight: 27
+    settings:
+      rows: 3
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea

@@ -1,0 +1,14 @@
+uuid: da512c01-89ce-43a0-954c-815a2c0daecc
+langcode: da
+status: true
+dependencies: {  }
+name: paragraph_action_box_icon
+label: 'Paragraph - action box - icon'
+effects:
+  622e1934-f048-46db-a80f-004fc05696e9:
+    uuid: 622e1934-f048-46db-a80f-004fc05696e9
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 180
+      height: 180

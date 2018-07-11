@@ -1,0 +1,9 @@
+uuid: 426211f4-21d3-4133-9c9c-0f6ce18c7b54
+langcode: da
+status: true
+dependencies: {  }
+id: action_boxes
+label: 'Action bokse'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

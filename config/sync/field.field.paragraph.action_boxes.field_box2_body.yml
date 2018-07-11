@@ -1,0 +1,21 @@
+uuid: 3093e8de-4cee-4c66-8ae4-3d491e61f024
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_box2_body
+    - paragraphs.paragraphs_type.action_boxes
+  module:
+    - text
+id: paragraph.action_boxes.field_box2_body
+field_name: field_box2_body
+entity_type: paragraph
+bundle: action_boxes
+label: Brødtekst
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

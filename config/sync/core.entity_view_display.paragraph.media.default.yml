@@ -11,7 +11,7 @@ dependencies:
     - field.field.paragraph.media.field_position_of_media
     - field.field.paragraph.media.field_subheading
     - field.field.paragraph.media.field_video_url
-    - image.style.paragraph_media
+    - image.style.paragraph_background_image
     - paragraphs.paragraphs_type.media
   module:
     - image
@@ -22,7 +22,7 @@ bundle: media
 mode: default
 content:
   field_background_image:
-    weight: 4
+    weight: 3
     label: hidden
     settings:
       image_style: paragraph_background_image
@@ -45,15 +45,6 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-  field_media:
-    weight: 3
-    label: hidden
-    settings:
-      image_style: paragraph_media
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
   field_subheading:
     weight: 1
     label: hidden
@@ -63,5 +54,6 @@ content:
     region: content
 hidden:
   field_background_color: true
+  field_media: true
   field_position_of_media: true
   field_video_url: true

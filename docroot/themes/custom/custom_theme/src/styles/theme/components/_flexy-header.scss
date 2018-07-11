@@ -10,6 +10,9 @@
 // Variables
 // --------------------------------------------------
 
+$flexy-header-large-banner-text-color-dark: $text-color-dark;
+$flexy-header-large-banner-text-color-light: #fff;
+
 // --------------------------------------------------
 // Mixins
 // --------------------------------------------------
@@ -43,6 +46,49 @@
 // --------------------------------------------------
 // Variants
 // --------------------------------------------------
+
+.has-large-banner {
+
+  .flexy-header--static {
+    border-bottom: 0;
+
+    .flexy-header__row {
+      background-color: transparent;
+    }
+  }
+
+  &.banner-has-text-color-dark {
+
+    .flexy-header--static {
+
+      .flexy-header__logo {
+
+        img {
+
+          path {
+            fill: $flexy-header-large-banner-text-color-dark;
+          }
+        }
+      }
+    }
+  }
+
+  &.banner-has-text-color-light {
+
+    .flexy-header--static {
+
+      .flexy-header__logo {
+
+        img {
+
+          path {
+            fill: $flexy-header-large-banner-text-color-light;
+          }
+        }
+      }
+    }
+  }
+}
 
 // --------------------------------------------------
 // Responsive

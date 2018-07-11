@@ -56,6 +56,8 @@ $lg-banner-small-min-height: 450px;
 }
 
 .banner__heading__title {
+  font-weight: $headings-font-weight-bold;
+
   color: $banner-text-color-dark;
 
   .banner--text-color-dark & {
@@ -90,6 +92,8 @@ $lg-banner-small-min-height: 450px;
 }
 
 .banner--large {
+  margin-top: 0 - $xs-flexy-header-static-row-height;
+
   min-height: $xs-banner-large-min-height;
 }
 
@@ -114,6 +118,8 @@ $lg-banner-small-min-height: 450px;
   }
 
   .banner--large {
+    margin-top: 0 - $sm-flexy-header-static-row-height;
+
     min-height: $sm-banner-large-min-height;
   }
 }
@@ -129,6 +135,8 @@ $lg-banner-small-min-height: 450px;
   }
 
   .banner--large {
+    margin-top: 0 - $md-flexy-header-static-row-height;
+
     min-height: $md-banner-large-min-height;
   }
 }
@@ -141,6 +149,8 @@ $lg-banner-small-min-height: 450px;
   }
 
   .banner--large {
+    margin-top: 0 - $lg-flexy-header-static-row-height;
+
     min-height: $lg-banner-large-min-height;
   }
 }

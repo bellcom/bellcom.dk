@@ -10,6 +10,9 @@
 // Variables
 // --------------------------------------------------
 
+$flexy-navigation-large-banner-text-color-dark: $text-color-dark;
+$flexy-navigation-large-banner-text-color-light: #fff;
+
 // --------------------------------------------------
 // Mixins
 // --------------------------------------------------
@@ -32,6 +35,31 @@
 // --------------------------------------------------
 // Variants
 // --------------------------------------------------
+
+.has-large-banner {
+
+  &.banner-has-text-color-dark {
+
+    .flexy-header--static {
+      @include flexy-navigation-mixin-item-colors(
+                      $flexy-navigation-large-banner-text-color-dark, $flexy-navigation-item-link-background-color,
+                      $flexy-navigation-large-banner-text-color-dark, $flexy-navigation-item-link-hover-background-color,
+                      $flexy-navigation-large-banner-text-color-dark, $flexy-navigation-item-active-link-background-color
+      );
+    }
+  }
+
+  &.banner-has-text-color-light {
+
+    .flexy-header--static {
+      @include flexy-navigation-mixin-item-colors(
+                      $flexy-navigation-large-banner-text-color-light, $flexy-navigation-item-link-background-color,
+                      $flexy-navigation-large-banner-text-color-light, $flexy-navigation-item-link-hover-background-color,
+                      $flexy-navigation-large-banner-text-color-light, $flexy-navigation-item-active-link-background-color
+      );
+    }
+  }
+}
 
 // --------------------------------------------------
 // Responsive

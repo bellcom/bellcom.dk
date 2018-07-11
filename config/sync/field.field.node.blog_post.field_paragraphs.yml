@@ -25,7 +25,7 @@ settings:
     target_bundles:
       section: section
     target_bundles_drag_drop:
-      action_box:
+      action_boxes:
         weight: 7
         enabled: false
       from_library:

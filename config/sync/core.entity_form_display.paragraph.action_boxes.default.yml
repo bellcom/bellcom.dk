@@ -3,14 +3,14 @@ langcode: da
 status: true
 dependencies:
   config:
-    - field.field.paragraph.action_box.field_background_color
-    - field.field.paragraph.action_box.field_background_image
-    - field.field.paragraph.action_box.field_body
-    - field.field.paragraph.action_box.field_heading
-    - field.field.paragraph.action_box.field_link
-    - field.field.paragraph.action_box.field_text_color
-    - image.style.paragraph_action_box
-    - paragraphs.paragraphs_type.action_box
+    - field.field.paragraph.action_boxes.field_background_color
+    - field.field.paragraph.action_boxes.field_background_image
+    - field.field.paragraph.action_boxes.field_body
+    - field.field.paragraph.action_boxes.field_heading
+    - field.field.paragraph.action_boxes.field_link
+    - field.field.paragraph.action_boxes.field_text_color
+    - image.style.paragraph_action_boxes
+    - paragraphs.paragraphs_type.action_boxes
   module:
     - field_group
     - focal_point
@@ -33,9 +33,9 @@ third_party_settings:
         classes: ''
         open: false
       label: Udseende
-id: paragraph.action_box.default
+id: paragraph.action_boxes.default
 targetEntityType: paragraph
-bundle: action_box
+bundle: action_boxes
 mode: default
 content:
   field_background_color:
@@ -47,7 +47,7 @@ content:
   field_background_image:
     weight: 4
     settings:
-      preview_image_style: paragraph_action_box
+      preview_image_style: paragraph_action_boxes
       progress_indicator: throbber
       preview_link: true
       offsets: '50,50'

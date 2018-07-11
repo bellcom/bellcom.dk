@@ -3,21 +3,21 @@ langcode: da
 status: true
 dependencies:
   config:
-    - field.field.paragraph.action_box.field_background_color
-    - field.field.paragraph.action_box.field_background_image
-    - field.field.paragraph.action_box.field_body
-    - field.field.paragraph.action_box.field_heading
-    - field.field.paragraph.action_box.field_link
-    - field.field.paragraph.action_box.field_text_color
-    - image.style.paragraph_action_box
-    - paragraphs.paragraphs_type.action_box
+    - field.field.paragraph.action_boxes.field_background_color
+    - field.field.paragraph.action_boxes.field_background_image
+    - field.field.paragraph.action_boxes.field_body
+    - field.field.paragraph.action_boxes.field_heading
+    - field.field.paragraph.action_boxes.field_link
+    - field.field.paragraph.action_boxes.field_text_color
+    - image.style.paragraph_action_boxes
+    - paragraphs.paragraphs_type.action_boxes
   module:
     - image
     - link
     - text
-id: paragraph.action_box.default
+id: paragraph.action_boxes.default
 targetEntityType: paragraph
-bundle: action_box
+bundle: action_boxes
 mode: default
 content:
   field_background_image:
@@ -26,7 +26,7 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: paragraph_action_box
+      image_style: paragraph_action_boxes
       image_link: ''
     third_party_settings: {  }
   field_body:

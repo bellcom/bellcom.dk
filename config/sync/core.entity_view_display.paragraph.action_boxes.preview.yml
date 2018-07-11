@@ -4,16 +4,16 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
-    - field.field.paragraph.action_box.field_background_color
-    - field.field.paragraph.action_box.field_background_image
-    - field.field.paragraph.action_box.field_body
-    - field.field.paragraph.action_box.field_heading
-    - field.field.paragraph.action_box.field_link
-    - field.field.paragraph.action_box.field_text_color
-    - paragraphs.paragraphs_type.action_box
-id: paragraph.action_box.preview
+    - field.field.paragraph.action_boxes.field_background_color
+    - field.field.paragraph.action_boxes.field_background_image
+    - field.field.paragraph.action_boxes.field_body
+    - field.field.paragraph.action_boxes.field_heading
+    - field.field.paragraph.action_boxes.field_link
+    - field.field.paragraph.action_boxes.field_text_color
+    - paragraphs.paragraphs_type.action_boxes
+id: paragraph.action_boxes.preview
 targetEntityType: paragraph
-bundle: action_box
+bundle: action_boxes
 mode: preview
 content:
   field_heading:

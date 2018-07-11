@@ -8,7 +8,7 @@ third_party_settings:
   paragraphs_library:
     allow_library_conversion: true
 id: action_box
-label: 'Action boks'
+label: 'Call-to-action boks'
 icon_uuid: null
 description: 'Simpel bannerlignende boks med mulighed for valg af fuld baggrundsfarve eller et baggrundsbillede.'
 behavior_plugins: {  }

@@ -6,20 +6,24 @@ dependencies:
     - field.field.paragraph.action_boxes.field_box1_body
     - field.field.paragraph.action_boxes.field_box1_heading
     - field.field.paragraph.action_boxes.field_box1_icon
+    - field.field.paragraph.action_boxes.field_box1_link
     - field.field.paragraph.action_boxes.field_box1_subheading
     - field.field.paragraph.action_boxes.field_box2_body
     - field.field.paragraph.action_boxes.field_box2_heading
     - field.field.paragraph.action_boxes.field_box2_icon
+    - field.field.paragraph.action_boxes.field_box2_link
     - field.field.paragraph.action_boxes.field_box2_subheading
     - field.field.paragraph.action_boxes.field_box3_body
     - field.field.paragraph.action_boxes.field_box3_heading
     - field.field.paragraph.action_boxes.field_box3_icon
+    - field.field.paragraph.action_boxes.field_box3_link
     - field.field.paragraph.action_boxes.field_box3_subheading
     - image.style.thumbnail
     - paragraphs.paragraphs_type.action_boxes
   module:
     - field_group
     - image
+    - link
     - text
 third_party_settings:
   field_group:
@@ -29,6 +33,7 @@ third_party_settings:
         - field_box1_heading
         - field_box1_subheading
         - field_box1_body
+        - field_box1_link
       parent_name: ''
       weight: 20
       format_type: fieldset
@@ -44,6 +49,7 @@ third_party_settings:
         - field_box2_heading
         - field_box2_subheading
         - field_box2_body
+        - field_box2_link
       parent_name: ''
       weight: 20
       format_type: fieldset
@@ -59,6 +65,7 @@ third_party_settings:
         - field_box3_heading
         - field_box3_subheading
         - field_box3_body
+        - field_box3_link
       parent_name: ''
       weight: 20
       format_type: fieldset
@@ -115,6 +122,14 @@ content:
     third_party_settings: {  }
     type: image_image
     region: content
+  field_box1_link:
+    weight: 10
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   field_box1_subheading:
     weight: 8
     settings:
@@ -147,6 +162,14 @@ content:
     third_party_settings: {  }
     type: image_image
     region: content
+  field_box2_link:
+    weight: 27
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
   field_box2_subheading:
     weight: 25
     settings:
@@ -178,6 +201,14 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_box3_link:
+    weight: 29
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
     region: content
   field_box3_subheading:
     weight: 27

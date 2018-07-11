@@ -1,6 +1,4 @@
 {% set classes = [
-  'boxy',
-  'boxy--' ~ paragraph.bundle|clean_class,
   'paragraph',
   'paragraph--type--' ~ paragraph.bundle|clean_class,
   view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
@@ -10,34 +8,157 @@
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
 
-      <div class="paragraph__content">
-        <div class="paragraph__content__inner">
+      <div class="row">
 
-          {# Begin - heading #}
-          {% if paragraph.field_heading.value %}
-            <div class="paragraph__heading">
-              {{ content.field_heading }}
-            </div>
-          {% endif %}
-          {# End - heading #}
+        <!-- Begin - box 1 -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="action-box action-box--no-1">
 
-          {# Begin - body #}
-          {% if paragraph.field_body.value %}
-            <div class="paragraph__body">
-              {{ content.field_body }}
-            </div>
-          {% endif %}
-          {# End - body #}
+            {# Begin - icon #}
+            {% if paragraph.field_box1_icon.value %}
+              <div class="action-box__icon">
+                {{ content.field_box1_icon }}
+              </div>
+            {% endif %}
+            {# End - icon #}
 
-        </div>
+            {# Begin - heading #}
+            {% if paragraph.field_box1_heading.value %}
+              <div class="action-box__heading">
+                <h4 class="action-box__heading__title heading-h3">
+                  {{ content.field_box1_heading }}
+                </h4>
+              </div>
+            {% endif %}
+            {# End - heading #}
 
-        {# Begin - link #}
-        {% if paragraph.field_link.value %}
-          <div class="paragraph__link">
-            {{ content.field_link }}
+            {# Begin - subheading #}
+            {% if paragraph.field_box1_subheading.value %}
+              <div class="action-box__subheading heading-h5">
+                {{ content.field_box1_subheading }}
+              </div>
+            {% endif %}
+            {# End - subheading #}
+
+            {# Begin - body #}
+            {% if paragraph.field_box1_body.value %}
+              <div class="action-box__body">
+                {{ content.field_box1_body }}
+              </div>
+            {% endif %}
+            {# End - body #}
+
+            {# Begin - link #}
+            {% if paragraph.field_box1_link.value %}
+              <div class="action-box__link">
+                {{ content.field_box1_link }}
+              </div>
+            {% endif %}
+            {# End - link #}
+
           </div>
-        {% endif %}
-        {# End - link #}
+        </div>
+        <!-- End - box 1 -->
+
+        <!-- Begin - box 2 -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="action-box action-box--no-2">
+
+            {# Begin - icon #}
+            {% if paragraph.field_box2_icon.value %}
+              <div class="action-box__icon">
+                {{ content.field_box2_icon }}
+              </div>
+            {% endif %}
+            {# End - icon #}
+
+            {# Begin - heading #}
+            {% if paragraph.field_box2_heading.value %}
+              <div class="action-box__heading">
+                <h4 class="action-box__heading__title heading-h3">
+                  {{ content.field_box2_heading }}
+                </h4>
+              </div>
+            {% endif %}
+            {# End - heading #}
+
+            {# Begin - subheading #}
+            {% if paragraph.field_box2_subheading.value %}
+              <div class="action-box__subheading heading-h5">
+                {{ content.field_box2_subheading }}
+              </div>
+            {% endif %}
+            {# End - subheading #}
+
+            {# Begin - body #}
+            {% if paragraph.field_box2_body.value %}
+              <div class="action-box__body">
+                {{ content.field_box2_body }}
+              </div>
+            {% endif %}
+            {# End - body #}
+
+            {# Begin - link #}
+            {% if paragraph.field_box2_link.value %}
+              <div class="action-box__link">
+                {{ content.field_box2_link }}
+              </div>
+            {% endif %}
+            {# End - link #}
+
+          </div>
+        </div>
+        <!-- End - box 2 -->
+
+        <!-- Begin - box 3 -->
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <div class="action-box action-box--no-3">
+
+            {# Begin - icon #}
+            {% if paragraph.field_box3_icon.value %}
+              <div class="action-box__icon">
+                {{ content.field_box3_icon }}
+              </div>
+            {% endif %}
+            {# End - icon #}
+
+            {# Begin - heading #}
+            {% if paragraph.field_box3_heading.value %}
+              <div class="action-box__heading">
+                <h4 class="action-box__heading__title heading-h3">
+                  {{ content.field_box3_heading }}
+                </h4>
+              </div>
+            {% endif %}
+            {# End - heading #}
+
+            {# Begin - subheading #}
+            {% if paragraph.field_box3_subheading.value %}
+              <div class="action-box__subheading heading-h5">
+                {{ content.field_box3_subheading }}
+              </div>
+            {% endif %}
+            {# End - subheading #}
+
+            {# Begin - body #}
+            {% if paragraph.field_box3_body.value %}
+              <div class="action-box__body">
+                {{ content.field_box3_body }}
+              </div>
+            {% endif %}
+            {# End - body #}
+
+            {# Begin - link #}
+            {% if paragraph.field_box3_link.value %}
+              <div class="action-box__link">
+                {{ content.field_box3_link }}
+              </div>
+            {% endif %}
+            {# End - link #}
+
+          </div>
+        </div>
+        <!-- End - box 3 -->
 
       </div>
 

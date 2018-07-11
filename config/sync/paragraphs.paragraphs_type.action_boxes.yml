@@ -3,7 +3,7 @@ langcode: da
 status: true
 dependencies: {  }
 id: action_boxes
-label: 'Action bokse'
+label: '3 action bokse'
 icon_uuid: null
 description: ''
 behavior_plugins: {  }

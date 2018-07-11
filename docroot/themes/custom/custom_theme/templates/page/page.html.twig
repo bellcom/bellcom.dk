@@ -130,34 +130,37 @@
     {% endif %}
     {# End - banner #}
 
-    <div class="container">
+    <div class="page-content">
+      <div class="container">
 
-      {# Highlighted #}
-      {% if page.highlighted %}
-        {% block highlighted %}
-          <div class="highlighted">
-            {{ page.highlighted }}
-          </div>
+        {# Highlighted #}
+        {% if page.highlighted %}
+          {% block highlighted %}
+            <div class="highlighted">
+              {{ page.highlighted }}
+            </div>
+          {% endblock %}
+        {% endif %}
+
+        {# Help #}
+        {% if page.help %}
+          {% block help %}
+            {{ page.help }}
+          {% endblock %}
+        {% endif %}
+
+        {# Content #}
+        {% block content %}
+          <!-- Begin - content -->
+          <a id="main-content"></a>
+
+          {{ page.content }}
+          <!-- End - content -->
         {% endblock %}
-      {% endif %}
 
-      {# Help #}
-      {% if page.help %}
-        {% block help %}
-          {{ page.help }}
-        {% endblock %}
-      {% endif %}
-
-      {# Content #}
-      {% block content %}
-        <!-- Begin - content -->
-        <a id="main-content"></a>
-
-        {{ page.content }}
-        <!-- End - content -->
-      {% endblock %}
-
+      </div>
     </div>
+
   </main>
   <!-- End - content -->
 

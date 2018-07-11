@@ -1,0 +1,23 @@
+uuid: a82019bf-af6a-428c-8a4c-7f57551cb0d5
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_banner_pull_content_up
+    - node.type.page
+id: node.page.field_banner_pull_content_up
+field_name: field_banner_pull_content_up
+entity_type: node
+bundle: page
+label: 'Træk indhold op over banner'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

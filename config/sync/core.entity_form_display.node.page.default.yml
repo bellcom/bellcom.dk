@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.page.field_banner_background_image
     - field.field.node.page.field_banner_body
     - field.field.node.page.field_banner_heading
+    - field.field.node.page.field_banner_pull_content_up
     - field.field.node.page.field_banner_text_color
     - field.field.node.page.field_banner_type
     - field.field.node.page.field_body
@@ -29,6 +30,7 @@ third_party_settings:
         - field_banner_body
         - field_banner_background_image
         - field_banner_text_color
+        - field_banner_pull_content_up
       parent_name: ''
       weight: 1
       format_type: fieldset
@@ -76,6 +78,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_banner_pull_content_up:
+    weight: 12
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   field_banner_text_color:
     weight: 11

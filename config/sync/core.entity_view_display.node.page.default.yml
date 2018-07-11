@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.page.field_banner_background_image
     - field.field.node.page.field_banner_body
     - field.field.node.page.field_banner_heading
+    - field.field.node.page.field_banner_pull_content_up
     - field.field.node.page.field_banner_text_color
     - field.field.node.page.field_banner_type
     - field.field.node.page.field_body
@@ -30,6 +31,16 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: basic_string
+    region: content
+  field_banner_pull_content_up:
+    weight: 5
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
     region: content
   field_body:
     weight: 2

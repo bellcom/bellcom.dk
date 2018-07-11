@@ -7,7 +7,7 @@
   not paragraph.isPublished() ? 'paragraph--unpublished'
 ] %}
 {% block paragraph %}
-  <div{{ attributes.addClass(classes) }}  style="background-image: url({{ paragraph.field_background_image.entity.fileuri | image_style(content.field_background_image[0]['#image_style']) }});">
+  <div{{ attributes.addClass(classes) }} {% if background_image %} style="background-image: url({{ background_image }});" {% endif %}>
     {% block content %}
 
       <div class="paragraph__content">

@@ -41,6 +41,14 @@ function custom_theme_preprocess_html(array &$variables) {
     if ($field_text_color = $banner_entity->get('field_banner_text_color')->getValue()) {
       $variables['attributes']['class'][] = 'banner-has-text-color-' . $field_text_color[0]['value'];
     }
+
+    // Pull content up
+    if ($field_pull_content_up = $banner_entity->get('field_banner_pull_content_up')->getValue()) {
+
+      if ((boolean) $field_pull_content_up[0]['value']) {
+        $variables['attributes']['class'][] = 'banner-pull-content-up';
+      }
+    }
   }
 }
 

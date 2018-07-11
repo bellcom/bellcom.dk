@@ -1,0 +1,23 @@
+uuid: 7c55fd69-2046-4d0a-a801-4df475372cbe
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_box1_link
+    - paragraphs.paragraphs_type.action_boxes
+  module:
+    - link
+id: paragraph.action_boxes.field_box1_link
+field_name: field_box1_link
+entity_type: paragraph
+bundle: action_boxes
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

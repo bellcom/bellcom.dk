@@ -25,6 +25,10 @@ img {
     max-width: 100%;
 }
 
+.btn {
+    border: 0;
+}
+
 .icon {
     // @extend .fa; // Extend Font Awesome, so .icon can be used instead (or switched out)
 }

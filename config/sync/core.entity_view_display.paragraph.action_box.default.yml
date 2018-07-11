@@ -1,0 +1,61 @@
+uuid: f4acc851-44f5-48fc-9e61-eba08f698ea0
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.action_box.field_background_color
+    - field.field.paragraph.action_box.field_background_image
+    - field.field.paragraph.action_box.field_body
+    - field.field.paragraph.action_box.field_heading
+    - field.field.paragraph.action_box.field_link
+    - field.field.paragraph.action_box.field_text_color
+    - image.style.paragraph_action_box
+    - paragraphs.paragraphs_type.action_box
+  module:
+    - image
+    - link
+    - text
+id: paragraph.action_box.default
+targetEntityType: paragraph
+bundle: action_box
+mode: default
+content:
+  field_background_image:
+    type: image
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      image_style: paragraph_action_box
+      image_link: ''
+    third_party_settings: {  }
+  field_body:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: null
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden:
+  field_background_color: true
+  field_text_color: true

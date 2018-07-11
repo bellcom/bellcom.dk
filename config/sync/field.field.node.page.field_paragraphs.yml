@@ -40,7 +40,7 @@ settings:
       section:
         enabled: true
         weight: 7
-      action_boxes:
+      action_box:
         weight: 7
         enabled: false
 field_type: entity_reference_revisions

@@ -1,4 +1,4 @@
-uuid: 964b7e8f-d92f-4a76-b0ce-5c77fcac1c87
+uuid: a52ea5b7-a578-47df-b4c2-706854e05923
 langcode: da
 status: true
 dependencies:
@@ -23,19 +23,6 @@ dependencies:
     - text
 third_party_settings:
   field_group:
-    group_appearance:
-      children:
-        - field_background_color
-      parent_name: ''
-      weight: 3
-      format_type: details
-      format_settings:
-        label: Udseende
-        required_fields: true
-        id: ''
-        classes: ''
-        open: false
-      label: Udseende
     group_box1:
       children:
         - field_box1_icon

@@ -4,7 +4,7 @@ status: true
 dependencies:
   module:
     - focal_point
-name: paragraph_action_boxes
+name: paragraph_action_box
 label: 'Paragraph - action box'
 effects:
   39973afe-28f1-48c6-a583-1cab0d2ab14f:

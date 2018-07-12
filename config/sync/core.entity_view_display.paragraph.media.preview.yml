@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
     - field.field.paragraph.media.field_background_color
-    - field.field.paragraph.media.field_background_image
     - field.field.paragraph.media.field_body
     - field.field.paragraph.media.field_heading
     - field.field.paragraph.media.field_media
@@ -28,7 +27,6 @@ content:
     region: content
 hidden:
   field_background_color: true
-  field_background_image: true
   field_body: true
   field_media: true
   field_position_of_media: true

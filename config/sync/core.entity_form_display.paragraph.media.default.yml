@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.media.field_background_color
-    - field.field.paragraph.media.field_background_image
     - field.field.paragraph.media.field_body
     - field.field.paragraph.media.field_heading
     - field.field.paragraph.media.field_media
@@ -42,16 +41,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
-    region: content
-  field_background_image:
-    weight: 7
-    settings:
-      preview_image_style: paragraph_background_image
-      progress_indicator: throbber
-      preview_link: true
-      offsets: '50,50'
-    third_party_settings: {  }
-    type: image_focal_point
     region: content
   field_body:
     weight: 2

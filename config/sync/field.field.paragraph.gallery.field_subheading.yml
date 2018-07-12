@@ -1,0 +1,21 @@
+uuid: 4026554e-e77f-48af-9c83-64a93f429e12
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_subheading
+    - paragraphs.paragraphs_type.gallery
+  module:
+    - text
+id: paragraph.gallery.field_subheading
+field_name: field_subheading
+entity_type: paragraph
+bundle: gallery
+label: Underrubrik
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

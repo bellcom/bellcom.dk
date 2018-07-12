@@ -1,0 +1,43 @@
+{% set classes = [
+  'boxy',
+  'boxy--' ~ paragraph.bundle|clean_class,
+  'paragraph',
+  'paragraph--type--' ~ paragraph.bundle|clean_class,
+  view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  not paragraph.isPublished() ? 'paragraph--unpublished'
+] %}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+
+      <div class="paragraph__content">
+
+        {# Begin - heading #}
+        {% if paragraph.field_heading.value %}
+          <div class="paragraph__heading">
+            {{ content.field_heading }}
+          </div>
+        {% endif %}
+        {# End - heading #}
+
+        {# Begin - subheading #}
+        {% if paragraph.field_subheading.value %}
+          <div class="paragraph__subheading">
+            {{ content.field_subheading }}
+          </div>
+        {% endif %}
+        {# End - subheading #}
+
+        {# Begin - images #}
+        {% if paragraph.field_images.value %}
+          <div class="paragraph__images">
+            {{ content.field_images }}
+          </div>
+        {% endif %}
+        {# End - images #}
+
+      </div>
+
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

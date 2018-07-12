@@ -1,0 +1,14 @@
+uuid: 22b94985-027f-4fdb-9c86-a6cf33417125
+langcode: da
+status: true
+dependencies: {  }
+name: paragraph_gallery_thumbnail
+label: 'Paragraph - gallery - thumbnail'
+effects:
+  64ffcbd7-e748-4314-a55d-4dee1c4bda4a:
+    uuid: 64ffcbd7-e748-4314-a55d-4dee1c4bda4a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 200
+      height: 200

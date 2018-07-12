@@ -4,29 +4,17 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.text.field_background_color
-    - field.field.paragraph.text.field_background_image
     - field.field.paragraph.text.field_body
     - field.field.paragraph.text.field_heading
     - field.field.paragraph.text.field_subheading
-    - image.style.paragraph_background_image
     - paragraphs.paragraphs_type.text
   module:
-    - image
     - text
 id: paragraph.text.default
 targetEntityType: paragraph
 bundle: text
 mode: default
 content:
-  field_background_image:
-    weight: 3
-    label: hidden
-    settings:
-      image_style: paragraph_background_image
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
   field_body:
     weight: 2
     label: hidden

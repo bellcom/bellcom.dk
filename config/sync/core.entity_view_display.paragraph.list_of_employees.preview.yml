@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.paragraph.preview
     - field.field.paragraph.list_of_employees.field_background_color
-    - field.field.paragraph.list_of_employees.field_background_image
     - field.field.paragraph.list_of_employees.field_body
     - field.field.paragraph.list_of_employees.field_departments
     - field.field.paragraph.list_of_employees.field_heading
@@ -26,7 +25,6 @@ content:
     region: content
 hidden:
   field_background_color: true
-  field_background_image: true
   field_body: true
   field_departments: true
   field_subheading: true

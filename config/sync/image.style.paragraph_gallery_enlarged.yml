@@ -1,0 +1,14 @@
+uuid: 11526092-d261-4c40-88c1-263de52a2fa2
+langcode: da
+status: true
+dependencies: {  }
+name: paragraph_gallery_enlarged
+label: 'Paragraph - gallery - enlarged'
+effects:
+  d0f3f0bd-fd8d-4ca2-9567-525193802069:
+    uuid: d0f3f0bd-fd8d-4ca2-9567-525193802069
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1600
+      height: 1000

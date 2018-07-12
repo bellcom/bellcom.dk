@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Photoswipe gallery
+// | Paragraph
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .photoswipe-gallery
+// | - .paragraph--type--gallery
 // |
 
 // --------------------------------------------------
@@ -14,25 +14,51 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin photoswipe-gallery-mixin() {}
+@mixin paragraph-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.photoswipe-gallery {
-  @include make-row();
+.paragraph--type--gallery {
 
-  .field--item {
-    @include make-xs-column(12);
-    @include make-sm-column(4);
-    @include make-md-column(3);
-    @include make-lg-column(2);
+  .paragraph__heading {
+    text-align: center;
 
-    margin-bottom: floor( ( $grid-gutter-width / 2 ) );
+    + .paragraph__images {
+      margin-top: $grid-gutter-width;
+    }
+  }
 
-    img {
-      width: 100%;
+  .paragraph__subheading {
+    text-align: center;
+
+    + .paragraph__images {
+      margin-top: $grid-gutter-width;
+    }
+  }
+
+  .paragraph__content {
+    max-width: 700px;
+    margin: auto;
+  }
+
+  .paragraph__images {
+    text-align: center;
+
+    @include make-row();
+
+    .field--item {
+      @include make-xs-column(12);
+      @include make-sm-column(4);
+      @include make-md-column(4);
+      @include make-lg-column(4);
+
+      margin-bottom: floor( ( $grid-gutter-width / 2 ) );
+
+      img {
+        width: 100%;
+      }
     }
   }
 }

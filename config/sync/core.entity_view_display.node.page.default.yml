@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.page.field_heading
     - field.field.node.page.field_paragraphs
     - field.field.node.page.field_subheading
+    - field.field.node.page.field_use_banner
     - node.type.page
   module:
     - entity_reference_revisions
@@ -78,5 +79,6 @@ hidden:
   field_banner_heading: true
   field_banner_text_color: true
   field_banner_type: true
+  field_use_banner: true
   langcode: true
   links: true

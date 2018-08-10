@@ -30,7 +30,7 @@ img {
 }
 
 .icon {
-    // @extend .fa; // Extend Font Awesome, so .icon can be used instead (or switched out)
+     @extend .fa; // Extend Font Awesome, so .icon can be used instead (or switched out)
 }
 
 .form-control {

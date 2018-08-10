@@ -13,6 +13,7 @@ dependencies:
     - field.field.node.page.field_heading
     - field.field.node.page.field_paragraphs
     - field.field.node.page.field_subheading
+    - field.field.node.page.field_use_banner
     - image.style.banner_background_image__small
     - node.type.page
   module:
@@ -25,6 +26,7 @@ third_party_settings:
   field_group:
     group_banner:
       children:
+        - field_use_banner
         - field_banner_type
         - field_banner_heading
         - field_banner_body
@@ -32,7 +34,7 @@ third_party_settings:
         - field_banner_text_color
         - field_banner_pull_content_up
       parent_name: ''
-      weight: 1
+      weight: 2
       format_type: fieldset
       format_settings:
         id: ''
@@ -54,7 +56,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_banner_background_image:
-    weight: 10
+    weight: 5
     settings:
       preview_image_style: banner_background_image__small
       progress_indicator: throbber
@@ -64,7 +66,7 @@ content:
     type: image_focal_point
     region: content
   field_banner_body:
-    weight: 9
+    weight: 4
     settings:
       rows: 5
       placeholder: ''
@@ -72,7 +74,7 @@ content:
     type: string_textarea
     region: content
   field_banner_heading:
-    weight: 8
+    weight: 3
     settings:
       size: 60
       placeholder: ''
@@ -80,20 +82,20 @@ content:
     type: string_textfield
     region: content
   field_banner_pull_content_up:
-    weight: 12
+    weight: 7
     settings:
       display_label: true
     third_party_settings: {  }
     type: boolean_checkbox
     region: content
   field_banner_text_color:
-    weight: 11
+    weight: 6
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
     region: content
   field_banner_type:
-    weight: 7
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
@@ -107,7 +109,7 @@ content:
     type: text_textarea
     region: content
   field_heading:
-    weight: 2
+    weight: 3
     settings:
       size: 60
       placeholder: ''
@@ -133,12 +135,19 @@ content:
     third_party_settings: {  }
     region: content
   field_subheading:
-    weight: 3
+    weight: 4
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
+  field_use_banner:
+    weight: 1
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
     region: content
   langcode:
     type: language_select

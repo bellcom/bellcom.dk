@@ -30,4 +30,21 @@ jQuery(function($) {
     else {
         $('[data-toggle="tooltip"]').tooltip();
     }
+
+    // Prevent dropdown menu from being :hoverable
+    $('.flexy-navigation__item--dropdown > a').on('click', function(event) {
+       event.preventDefault();
+
+       var $element = $(this),
+           $parent = $element.parent();
+
+       $parent.toggleClass('active');
+    });
+
+    $('body').click(function(event) {
+
+        if ($(event.target).closest('.flexy-navigation__item--dropdown > a').length === 0) {
+            $('.flexy-navigation__item--dropdown.active').removeClass('active');
+        }
+    });
 });

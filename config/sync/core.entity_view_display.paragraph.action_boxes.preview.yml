@@ -59,12 +59,15 @@ hidden:
   field_body: true
   field_box1_body: true
   field_box1_icon: true
+  field_box1_link: true
   field_box1_subheading: true
   field_box2_body: true
   field_box2_icon: true
+  field_box2_link: true
   field_box2_subheading: true
   field_box3_body: true
   field_box3_icon: true
+  field_box3_link: true
   field_box3_subheading: true
   field_link: true
   field_text_color: true

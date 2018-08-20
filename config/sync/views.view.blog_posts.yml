@@ -3,7 +3,7 @@ langcode: da
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.list_advanced
     - node.type.blog_post
     - system.menu.main
   module:
@@ -72,7 +72,8 @@ display:
       row:
         type: 'entity:node'
         options:
-          view_mode: teaser
+          relationship: none
+          view_mode: list_advanced
       fields:
         title:
           id: title
@@ -186,6 +187,7 @@ display:
         type: normal
         title: Blog
         menu_name: main
+        weight: -45
     cache_metadata:
       max-age: -1
       contexts:

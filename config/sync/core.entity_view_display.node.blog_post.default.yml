@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.blog_post.field_body
     - field.field.node.blog_post.field_heading
     - field.field.node.blog_post.field_paragraphs
+    - field.field.node.blog_post.field_short_description
     - field.field.node.blog_post.field_subheading
     - field.field.node.blog_post.field_tags
     - node.type.blog_post
@@ -58,5 +59,6 @@ content:
     type: entity_reference_label
     region: content
 hidden:
+  field_short_description: true
   langcode: true
   links: true

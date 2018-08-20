@@ -1,9 +1,9 @@
 // |--------------------------------------------------------------------------
-// | Boxy
+// | View
 // |--------------------------------------------------------------------------
 // |
 // | This file contains styles for the following:
-// | - .boxy
+// | - .view-blog-posts
 // |
 
 // --------------------------------------------------
@@ -14,59 +14,30 @@
 // Mixins
 // --------------------------------------------------
 
-@mixin boxy-mixin() {}
+@mixin view-blog-posts-mixin() {}
 
 // --------------------------------------------------
 // Styling
 // --------------------------------------------------
 
-.boxy {
-  overflow: hidden;
+.view-blog-posts {
 
-  background-color: $body-bg-secondary;
-  box-shadow: 0 10px 30px -8px rgba(0, 0, 0, .1);
-  border-radius: $border-radius-base;
-
-  &.paragraph {
-    margin-bottom: 0;
+  .view-content {
+    @extend .boxy;
+    @extend .boxy__body;
   }
-}
-.boxy__body {
-  border: 0;
+
+  .views-row {
+
+    + .views-row {
+      border-top: 1px solid $border-color;
+    }
+  }
 }
 
 // --------------------------------------------------
 // Variants
 // --------------------------------------------------
-
-.boxy {
-
-  &.boxy--background-color-transparent {
-    background-color: transparent;
-    box-shadow: none;
-    border-radius: 0;
-  }
-
-  &.boxy--background-color-body-bg-secondary {
-    background-color: $body-bg-secondary;
-  }
-
-  &.boxy--background-color-primary {
-    background-color: $brand-primary;
-  }
-
-  &.boxy--background-color-secondary {
-    background-color: $brand-secondary;
-  }
-
-  &.boxy--background-color-tertiary {
-    background-color: $brand-tertiary;
-  }
-
-  &.boxy--background-color-quaternary {
-    background-color: $brand-quaternary;
-  }
-}
 
 // --------------------------------------------------
 // Responsive

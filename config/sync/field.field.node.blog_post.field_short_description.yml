@@ -1,0 +1,21 @@
+uuid: 0eeced02-6da7-462c-8d09-8ef5dcaf7b90
+langcode: da
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_short_description
+    - node.type.blog_post
+  module:
+    - text
+id: node.blog_post.field_short_description
+field_name: field_short_description
+entity_type: node
+bundle: blog_post
+label: 'Kort beskrivelse'
+description: 'Bruges bl.a. i teasers, listevisning o.l.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -7,7 +7,9 @@ dependencies:
     - field.field.node.blog_post.field_body
     - field.field.node.blog_post.field_heading
     - field.field.node.blog_post.field_paragraphs
+    - field.field.node.blog_post.field_short_description
     - field.field.node.blog_post.field_subheading
+    - field.field.node.blog_post.field_tags
     - node.type.blog_post
   module:
     - text
@@ -17,13 +19,6 @@ targetEntityType: node
 bundle: blog_post
 mode: list_advanced
 content:
-  field_body:
-    weight: 2
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
   field_heading:
     weight: 0
     label: hidden
@@ -32,14 +27,17 @@ content:
     third_party_settings: {  }
     type: string
     region: content
-  field_subheading:
+  field_short_description:
+    type: text_default
     weight: 1
+    region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
-    region: content
 hidden:
+  field_body: true
   field_paragraphs: true
+  field_subheading: true
+  field_tags: true
   langcode: true
   links: true

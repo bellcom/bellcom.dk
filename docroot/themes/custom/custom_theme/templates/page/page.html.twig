@@ -149,6 +149,16 @@
           {% endblock %}
         {% endif %}
 
+        {# Begin - page header #}
+        {% if page.page__header%}
+          {% block page__header%}
+            <div class="entity-full__header">
+              {{ page.page__header}}
+            </div>
+          {% endblock %}
+        {% endif %}
+        {# End - page header #}
+
         {# Content #}
         {% block content %}
           <!-- Begin - content -->

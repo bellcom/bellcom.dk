@@ -15,6 +15,7 @@ regions:
   flexy_list__secondary: 'Flexy list - secondary navigation'
   highlighted: 'Highlighted'
   help: 'Help'
+  page__header: 'Page header'
   content: 'Content'
   footer__menu__first: 'Footer - menu (first)'
   footer__menu__second: 'Footer - menu (second)'

@@ -1,15 +1,17 @@
 uuid: d748af69-0955-4085-8aad-0777c1dd6b8e
 langcode: da
-status: false
+status: true
 dependencies:
+  module:
+    - system
   theme:
     - custom_theme
 _core:
   default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
 id: custom_theme_page_title
 theme: custom_theme
-region: content
-weight: -6
+region: page__header
+weight: -7
 provider: null
 plugin: page_title_block
 settings:
@@ -17,4 +19,9 @@ settings:
   label: Sidetitel
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: /blog
+    negate: false
+    context_mapping: {  }

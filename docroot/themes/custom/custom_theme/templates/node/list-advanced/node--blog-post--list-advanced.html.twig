@@ -10,13 +10,15 @@
 <a href="{{ url }}"
    class="element-wrapper-link entity-list-advanced entity-list-advanced--blog-post">
 
+  <!-- Begin - heading -->
+  <div class="entity-list-advanced__heading">
+    <h2
+      class="entity-list-advanced__heading__title heading-h3">{{ label }}</h2>
+  </div>
+  <!-- End - heading -->
+
   <!-- Begin - body -->
   <div class="entity-list-advanced__body">
-
-    <div class="entity-list-advanced__heading">
-      <h2
-        class="entity-list-advanced__heading__title heading-h4">{{ label }}</h2>
-    </div>
 
     {# Begin - short description #}
     {{ content.field_short_description }}
